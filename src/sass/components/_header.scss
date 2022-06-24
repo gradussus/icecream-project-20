@@ -12,13 +12,12 @@
     }
 
     &__menu {
-        padding-top: 20px;
+        padding-top: 15px;
 
         width: 100%;
         height: 100%;
 
-        display: flex;
-        flex-direction: column;
+        
 
         background-color: $background-color-menu;
 
@@ -38,6 +37,13 @@
         transform: translateX(0%)
     }
 
+    &__inner {
+    justify-content: center;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    }
+
 }
 
 .menu-button {
@@ -49,7 +55,16 @@
     cursor: pointer;
 
     &__close {
-        margin-bottom: 26px;
+        margin-bottom: 21px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:hover .menu-button__burger, &:focus .menu-button__burger {
+            fill: $title-text-color;
+            stroke: $title-text-color;
+        }
+      
     }
 
     &__burger {
@@ -63,6 +78,7 @@
         fill: $title-text-color;
         stroke: $title-text-color;
         }
+        
     }
     
    
