@@ -1,16 +1,23 @@
 .products__item {
     flex-basis: 100%;
+    position: relative;
 }
 .products__box {
     padding: 20px 40px 40px;
     text-align: center;
+   
     &--pink {
         background-color: #FFB8CA;
         &::before {
-            content: "";
-            background-image: url(../../images/products/products-1.png);
+            content: " ";
+            background-image: url(../images/products/products-1.png);
             background-repeat: no-repeat;
-            background-size: 280px 280px;
+            display: inline-block;
+            position: absolute;
+            
+            height: 280px;
+            width: 100%;
+         
         }
     }
 
