@@ -1,2 +1,18 @@
-@import './common';
-@import './example';
+// @import './common';
+// @import './example';
+
+// Base
+@import './base/container';
+@import './base/visually-hidden';
+@import './base/common';
+@import './base/variables';
+
+// Components
+@import './components/header.scss';
+@import './components/products.scss';
+@import './components/about.scss';
+@import './components/advantages.scss';
+@import './components/gallery.scss';
+@import './components/reviews.scss';
+@import './components/contacts.scss';
+@import './components/footer.scss';
