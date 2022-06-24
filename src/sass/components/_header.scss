@@ -1,8 +1,6 @@
 .header {
     background-color: #FFB8CA;
 
-    position: relative;
-
     &__mobile {
         display: flex;
 
@@ -10,9 +8,13 @@
     }
 
     &__menu {
-        display: none;
+        padding-top: 20px;
+
         width: 100%;
         height: 100%;
+
+        display: flex;
+        flex-direction: column;
 
         background-color: #E17992;
 
@@ -20,7 +22,16 @@
         top: 0;
         left: 0;
 
+        transform: translateX(100%);
+
+        transition: transform 250ms linear;
+
     }
+
+    &__menu.is-open {
+        transform: translateX(0%)
+    }
+
 }
 
 .menu-button {
@@ -29,6 +40,9 @@
     background: transparent;
     border: none;
 
+    &__close {
+        margin-bottom: 26px;
+    }
 
     &__burger {
         fill: #FFFFFF;
@@ -39,5 +53,34 @@
         stroke: #d41443;
         }
     }
+    
+    &__buy {
+        margin-bottom: 19px;
+    }
+}
+
+.nav__list {
+margin-left: -20px;
+    padding-left: 20px;
+    margin-right: -20px;
+    padding-right: 20px;
+
+    
+    border-top: 1px solid #FFFFFF;
+    
+
+    &:last-child {
+        border-bottom: 1px solid #FFFFFF;
+    }
+}
+
+
+.nav__link {
+padding-top: 11px;
+    padding-bottom: 11px;
+
+display: block;
+text-decoration: none;
+  
 }
 
