@@ -7,7 +7,19 @@
         <h2 class="about__title">
             how it’s made?
         </h2>
-        <img class="about__img" src="./images/about/cow-m.png" alt="Bottle of milk and a cow">
+        <div  class="about__img-tumb">
+            <picture>
+                <source media="(min-width: 767px)" 
+                        srcset="
+                                ./images/about/cow-m.png     1x,
+                                ./images/about/cow-m-@2x.png 2x
+                            " 
+                        type="image/png">
+                <img class="img" src="./images/about/cow-m.png" alt="Botle of milk and a cow" width="280" height="279"
+                    loading="lazy">
+            
+            </picture>
+        </div>
         <div class="about__tumb">
             <p class="about__text about__text--dark about__text--margin-bottom">
                 Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
