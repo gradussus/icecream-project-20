@@ -2,16 +2,23 @@
     flex-basis: 100%;
 }
 .products__box {
-    padding: 20px 40px 40 px;
+    padding: 20px 40px 40px;
     text-align: center;
     &--pink {
-        background-color: #FFB8CA;;
+        background-color: #FFB8CA;
+        &::before {
+            content: "";
+            background-image: url(../../images/products/products-1.png);
+            background-repeat: no-repeat;
+            background-size: 280px 280px;
+        }
     }
+
     &--pich {
-        background-color: #F0D1A5;;
+        background-color: #F0D1A5;
     }
     &--mint {
-        background-color: #C2E297;;
+        background-color: #C2E297;
     }
 }
 .products__title {
@@ -46,4 +53,9 @@ letter-spacing: 0.04em;
 color: #FFFFFF;
 
 margin-bottom: 32px;
+}
+
+.products__btn {
+    width: 40px;
+    height: 40px;
 }
