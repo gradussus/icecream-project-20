@@ -1,31 +1,75 @@
 .products__item {
     flex-basis: 100%;
-    position: relative;
-}
-.products__box {
-    padding: 20px 40px 40px;
+    margin-top: 140px;
+    border-radius: 24px;
+
+    padding: 160px 40px 40px;
     text-align: center;
+    position: relative;
    
     &--pink {
         background-color: #FFB8CA;
         &::before {
             content: " ";
-            background-image: url(../images/products/products-1.png);
+            background-image: url(../images/products/products1.png);
             background-repeat: no-repeat;
             display: inline-block;
             position: absolute;
-            
+            background-size: contain;
             height: 280px;
             width: 100%;
-         
+            bottom: 360px;
+            left: 0;
+            
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+             background-image: url(../images//products/products1-2x.png);
+            }
         }
     }
 
     &--pich {
         background-color: #F0D1A5;
+        &::before {
+            content: " ";
+            background-image: url(../images/products/products2.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: absolute;
+            background-size: contain;
+            height: 280px;
+            width: 100%;
+            bottom: 360px;
+            left: 0;
+            
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+             background-image: url(../images//products/products2-2x.png);
+            }
+        }
     }
     &--mint {
         background-color: #C2E297;
+        &::before {
+            content: " ";
+            background-image: url(../images/products/products3.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: absolute;
+            background-size: contain;
+            height: 280px;
+            width: 100%;
+            bottom: 360px;
+            left: 0;
+            
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+             background-image: url(../images//products/products3-2x.png);
+            }
+        }
     }
 }
 .products__title {
