@@ -46,6 +46,8 @@
     background: transparent;
     border: none;
 
+    cursor: pointer;
+
     &__close {
         margin-bottom: 26px;
     }
@@ -210,6 +212,8 @@ padding-top: 11px;
         background-color: $title-text-color;
         border-radius: 20px;
         border: none;
+
+        cursor: pointer;
     }
 
     &__button--secondly {
