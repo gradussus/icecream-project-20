@@ -33,6 +33,21 @@
 .about__thumb {
     padding-right: 60px;
     margin-bottom: 20px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-lightpink;
+    
+    background-image:
+        url(../images/about/milk-m.png);
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:
+            url(../images/about/milk-m-@2x.png);
+        }
 }
 .about__text {
     display: block;
