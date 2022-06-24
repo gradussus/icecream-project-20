@@ -66,6 +66,9 @@
     margin-bottom: 40px;
 }
 .button {
+    display: flex;
+    align-items: center;
+
     font-family: $primary-font;
     font-weight: 700;
     font-size: 14px;
@@ -88,4 +91,11 @@
     &:focus {
         background-color: $btn-hover;
     }
+}
+.button__text {
+    margin-right: 14px;
+}
+.button__icon {
+    width: 6.43px;
+    height: 10px;
 }
