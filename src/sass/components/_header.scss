@@ -1,7 +1,8 @@
 .header {
     background-color: #FFB8CA;
 
-
+ 
+    
 
     &__mobile {
         display: flex;
@@ -65,6 +66,10 @@
     &__buy {
         margin-bottom: 19px;
     }
+
+    &__buy {
+      align-items: center;
+    }
 }
 
 .nav__list {
@@ -115,11 +120,15 @@ padding-top: 11px;
 
     background-color: #FFB8CA;
 
-    position: relative;
-
     overflow: hidden;
-}
-.hero__circle {
+
+    &__container { 
+        margin-top: -20px;
+        padding-top: 131px;
+        position: relative;
+    }
+
+    &__circle {
         width: 346px;
         height: 344px;
 
@@ -132,12 +141,48 @@ padding-top: 11px;
         left: 11.25%;
 
         overflow: visible;
+
     }
 
-    .hero__image {
+    &__image {
         position: absolute;
 
         top: 9px;
         left: 81px;
     }
 
+    &__space {
+
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+
+        font-family: 'Titan One', cursive;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+
+       
+
+        
+
+        &--accent {
+            font-size: 48px;
+            line-height: 0.97;
+
+            color: #d41443;
+        }
+    }
+
+
+      
+
+    
+}
