@@ -65,3 +65,27 @@
 .about__text--margin-bottom {
     margin-bottom: 40px;
 }
+.button {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: $accent-color;
+    
+    cursor: pointer;
+    background-color: $background-white;
+    border: none;
+    border-radius: 22px;
+        
+    min-width: 176px;
+    min-height: 44px;
+    padding: 10px 37px;
+
+    display: block;
+            
+    &:hover,
+    &:focus {
+        background-color: $btn-hover;
+    }
+}
