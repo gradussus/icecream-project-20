@@ -2,7 +2,8 @@
   background-image: linear-gradient(
     to bottom,
     $background-white 20%,
-    $background-lightpink 80%
+    $background-lightpink 20%,
+    $background-lightpink 100%
   );
 }
 
@@ -115,6 +116,9 @@
   min-height: 44px;
   border-radius: 22px;
   border: none;
+
+  align-items: center;
+  text-align: center;
 
   font-family: $primary-font;
   font-weight: 700;
