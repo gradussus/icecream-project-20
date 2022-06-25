@@ -7,9 +7,6 @@
 @import './base/common';
 @import './base/variables';
 
-// Utils
-@import './utils/mixins';
-
 // Components
 @import './components/header.scss';
 @import './components/products.scss';
@@ -19,4 +16,3 @@
 @import './components/reviews.scss';
 @import './components/contacts.scss';
 @import './components/footer.scss';
-@import './components/button.scss';
