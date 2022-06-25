@@ -1,0 +1,102 @@
+.about {
+    background-color: $background-lightpink;
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
+.about__lable {
+    font-family: $brand-font;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $secondary-title-color;
+
+    margin-bottom: 15px;
+}
+
+.about__title {
+    font-family: $brand-font;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $accent-color;
+    margin-bottom: 32px;
+}
+.about__img-thumb {
+    margin-bottom: 40px;
+}
+.about__thumb {
+    padding-right: 60px;
+    margin-bottom: 20px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-lightpink;
+    
+    background-image:
+        url(../images/about/milk-m.png);
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:
+            url(../images/about/milk-m-@2x.png);
+        }
+}
+.about__text {
+    display: block;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $secondary-text-color;
+}
+
+.about__text--dark {
+    color: $default-text-color;
+}
+
+.about__text--margin-bottom {
+    margin-bottom: 40px;
+}
+.button {
+    display: flex;
+    align-items: center;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: $accent-color;
+    
+    cursor: pointer;
+    background-color: $background-white;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+        
+    min-width: 176px;
+    min-height: 44px;
+    padding: 10px 37px;
+
+    display: block;
+            
+    &:hover,
+    &:focus {
+        background-color: $btn-hover;
+    }
+}
+.button__text {
+    margin-right: 14px;
+}
+.button__icon {
+    width: 6.43px;
+    height: 10px;
+}
