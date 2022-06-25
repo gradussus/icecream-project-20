@@ -168,6 +168,13 @@
 }
 .products-box.is-open {
     display: block;
+    margin-bottom: 32px;
+}
+.products-box__item {
+    margin-bottom: 8px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .products-box__title {
     font-family: $brand-font;
@@ -204,8 +211,5 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $primary-text-color;
-    margin-bottom: 8px;
-    &:last-child {
-        margin-bottom: 32px;
-    }
+   
 }
