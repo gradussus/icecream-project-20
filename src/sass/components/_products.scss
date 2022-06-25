@@ -44,7 +44,7 @@
             content: " ";
             background-image: url(../images/products/products1.png);
             background-repeat: no-repeat;
-            display: inline-block;
+            display: block;
             position: absolute;
             background-size: contain;
             height: 280px;
@@ -65,7 +65,7 @@
             content: " ";
             background-image: url(../images/products/products2.png);
             background-repeat: no-repeat;
-            display: inline-block;
+            display: block;
             position: absolute;
             background-size: contain;
             height: 280px;
@@ -86,7 +86,7 @@
             content: " ";
             background-image: url(../images/products/products3.png);
             background-repeat: no-repeat;
-            display: inline-block;
+            display: block;
             position: absolute;
             background-size: contain;
             height: 280px;
@@ -111,7 +111,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primary-text-color;
-    margin-bottom: 70px;
     &::after {
         content: " ";
         background-image: url(../images/products/dots.png);
@@ -120,10 +119,7 @@
         display: block;
         width: 26px;
         height: 6px;
-        position: absolute;
-        bottom: 275px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 32px auto;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -166,4 +162,47 @@
     display: block;
     border-radius: 50%;
     fill: $accent-color
+}
+.products-box {
+    display: none;
+}
+.products-box.is-open {
+    display: block;
+}
+.products-box__title {
+    font-family: $brand-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 70px;
+    &::after {
+        content: " ";
+        background-image: url(../images/products/dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 26px;
+        height: 6px;
+        margin: 32px auto;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images//products/dots-2x.png);
+        }
+    }
+
+}
+.products-box__text {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $primary-text-color;
+    margin-bottom: 32px;
 }
