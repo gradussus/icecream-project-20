@@ -1,0 +1,171 @@
+.contacts-section {
+  background-image: linear-gradient(
+    to bottom,
+    $background-white 20%,
+    $background-lightpink 20%,
+    $background-lightpink 100%
+  );
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+  padding: 40px 32px;
+
+  width: 100%;
+  background: $background-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.category {
+  display: block;
+  margin-bottom: 20px;
+  width: 80px;
+
+  text-align: center;
+  align-items: center;
+  background: #f0d1a5;
+  border-radius: 4px;
+
+  &--green {
+    width: 130px;
+    background: #c2e297;
+  }
+}
+
+.category__name {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+}
+
+.location__name {
+  margin-bottom: 8px;
+
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  letter-spacing: 0.04em;
+
+  color: $default-text-color;
+}
+
+.location__description {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: $secondary-text-color;
+}
+
+.location__item::after,
+.schedule::after {
+  content: '';
+  margin-bottom: 24px;
+  margin-top: 24px;
+  border: 1px solid $footer-line-color;
+  background-color: $footer-line-color;
+
+  display: block;
+  width: 100%;
+}
+
+.weekday-schedule__days,
+.day-of-schedule__days {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  color: $default-text-color;
+}
+
+.day-of-schedule__time,
+.weekday-schedule__time {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  color: $secondary-title-color;
+}
+
+.contact-details__link {
+  text-decoration: none;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: $secondary-text-color;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  min-width: 161.45px;
+  min-height: 44px;
+  border-radius: 22px;
+  border: none;
+
+  align-items: center;
+  text-align: center;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  cursor: pointer;
+}
+
+.locations-btn {
+  margin-bottom: 10px;
+
+  background: #d41342;
+
+  text-align: center;
+
+  color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+
+.franchise-btn {
+  background: $background-white;
+
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover;
+  }
+}
+
+.location-btn_name {
+  margin-right: 8px;
+}
+
+.franchise-btn__name {
+  margin-right: 13px;
+}
+
+.location-btn__icon {
+  fill: #d41342;
+}
+
+.franchise-btn__icon {
+  fill: $primary-text-color;
+}
