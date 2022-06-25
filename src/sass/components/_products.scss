@@ -23,10 +23,12 @@
     text-transform: uppercase;
     color: $title-text-color;
     &--mardgin {
-       margin-bottom: 153px;
+       margin-bottom: 8px;
     }
 }
-
+.products {
+    padding-top: 140px;
+}
 .products__item {
     position: relative;
     flex-basis: 100%;
@@ -34,7 +36,7 @@
     padding: 160px 40px 40px;
     text-align: center;
     & + & {
-        margin-top: 153px;
+        margin-top: 140px;
     }
     &--pink {
         background-color: $background-header-pink;
@@ -47,7 +49,7 @@
             background-size: contain;
             height: 280px;
             width: 100%;
-            bottom: 360px;
+            bottom: 353px;
             left: 0;
             
             @media (min-device-pixel-ratio: 2),
@@ -68,7 +70,7 @@
             background-size: contain;
             height: 280px;
             width: 100%;
-            bottom: 360px;
+            bottom: 353px;
             left: 0;
             
             @media (min-device-pixel-ratio: 2),
@@ -89,7 +91,7 @@
             background-size: contain;
             height: 280px;
             width: 100%;
-            bottom: 360px;
+            bottom: 353px;
             left: 0;
             
             @media (min-device-pixel-ratio: 2),
