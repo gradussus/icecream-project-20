@@ -264,6 +264,8 @@
   }
 
   &__space {
+  margin-bottom: 61px;
+
     position: relative;
     z-index: 2;
   }
@@ -347,15 +349,18 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  margin-left: 152px;
+
   font-size: 8px;
   line-height: 1.5;
+  font-weight: 400;
   
   color: $background-white;
 
-  position: absolute;
-  left: 184px;
-  top: 187px;
-
+  // position: absolute;
+  // left: 184px;
+  // top: 187px;
+position: relative;
   z-index: 4;
  }
 
