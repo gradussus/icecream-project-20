@@ -1,9 +1,24 @@
 .footer {
   background-color: $background-lightpink;
 }
-.title__wrap {
-  max-width: 234px;
+
+.wrap {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+.footer__wrap {
+  @media screen and(min-width:320px) and(max-width:767px) {
+    max-width: 234px;
+  }
+  @media screen and(min-width:768px) {
+    max-width: 340px;
+  }
+}
+
 .footer__subtitle {
   font-family: 'Titan One';
   font-weight: 400;
@@ -14,6 +29,12 @@
 
   color: $secondary-title-color;
   margin-bottom: 16px;
+
+  @media screen and(min-width:768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
 }
 
 .footer__title {
@@ -27,6 +48,10 @@
 
   color: $title-text-color;
   margin-bottom: 40px;
+
+  @media screen and(min-width:768px) {
+    font-size: 48px;
+  }
 }
 .icons__list {
   display: flex;
@@ -36,6 +61,22 @@
 
 .icons__item:not(:last-child) {
   margin-right: 28px;
+}
+
+.icons__link {
+  display: block;
+}
+
+.icons__svg {
+  fill: $social-icon-color;
+  @media screen and(min-width:768px) {
+    width: 34px;
+    height: 34px;
+    .icons__link:hover &,
+    .icons__link:focus & {
+      fill: $accent-color;
+    }
+  }
 }
 
 .footer__tel {
@@ -56,7 +97,16 @@
 }
 .footer__rigths {
   border-top: 1px solid $footer-line-color;
-  padding-top: 16px;
+  @media screen and(max-width:767px) {
+    padding-top: 16px;
+  }
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+  }
 }
 .footer__info {
   font-family: 'DM Sans';
