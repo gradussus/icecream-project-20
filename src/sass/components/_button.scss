@@ -29,7 +29,7 @@
     background-color: $btn-hover;
   }
 
-  @include mq(desktop) {
+  @media screen and (min-width: 1200px) {
     height: 40px;
     font-size: 14px;
     line-height: 1.29;
