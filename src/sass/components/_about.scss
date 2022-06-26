@@ -179,7 +179,7 @@ body.modal-open {
         margin-bottom: 25px;
     }
 }
-.button {
+.about-button {
     display: flex;
     align-items: center;
 
@@ -215,12 +215,8 @@ body.modal-open {
         background-color: $btn-hover;
     }
 }
-.button__text {
+.about-button__text {
     margin-right: 14px;
-}
-.button__icon {
-    width: 6.43px;
-    height: 10px;
 }
 
 .backdrop {
