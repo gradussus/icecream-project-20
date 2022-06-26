@@ -1,11 +1,14 @@
 .ice-cream-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  width: fit-content;
+  block-size: fit-content;
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 8px; 
   line-height: 1.25;
+  text-decoration: none;
 
   color: $primary-text-color;
 
