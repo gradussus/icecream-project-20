@@ -1,10 +1,17 @@
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: 1,
-    // effect: 'cube',
-    // cubeEffect: {
-    //   shadow: false,
-    //   slideShadows: false,
-    // },
+
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+        scale: 0,
+       
+      },
+      next: {
+        translate: ['100%', 0, 0],
+      },
+    },
+  
     keyboard: {
       enabled: true,
       onlyInViewport: false,

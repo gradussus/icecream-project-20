@@ -1,15 +1,11 @@
-.section--reveiws{
+.section--padding-top{
     padding-top: 60px;
 }
 
-.mySwiper{
-   height: auto;
-}
-.swiper-slide{
-   height: auto;
-}
-.swiper-wrapper{
-   height: auto;
+.mySwiper, 
+.swiper-slide, 
+.swiper-wrapper {
+    height: auto;
 }
 
 .customer-card{
@@ -46,6 +42,8 @@
     padding-bottom: 17px;
 
     margin-bottom: 18px;
+
+    box-shadow: 10px 10px 8px -8px rgba(0, 0, 0, 0.3);
 
     @media screen and (min-width: 768px) {
         margin-right: 42px;
@@ -148,6 +146,7 @@
         height: 4px;
         background-size: contain;
         background-image: url('/src/images/reviews/markers.png');
+        background-repeat: no-repeat;
     }
 
     @media screen and (min-width:768px) {
@@ -157,22 +156,22 @@
 }
 
 .swiper-pagination{
-    position: static;
-  
+    position: static; 
 }
 
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 9px;
+}
 .swiper-pagination-bullet{
     width: 12px;
     height: 12px;
     opacity: 1;
-    margin: 0 9px;
-    
-    background-color: $pagination-bg-color;
    
+    background-color: $pagination-bg-color;
 }
 .swiper-pagination-bullet-active{
     background-color: transparent;
-    background-image: url('/src/images/reviews/current-slide.png');
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.24 5.775a.578.578 0 0 0-.049-.834L6.651.16a.698.698 0 0 0-.9.01L.193 5.196a.574.574 0 0 0-.027.833l.14.143c.23.238.604.266.834.063l.415-.367v5.373a.6.6 0 0 0 .605.596h2.166a.6.6 0 0 0 .605-.596V7.482h2.764v3.759c-.005.33.234.596.568.596h2.296a.6.6 0 0 0 .604-.596V5.944l.257.222c.141.122.438.024.662-.22l.158-.17Z' fill='%23D31342'/%3E%3C/svg%3E%0A");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 0;
