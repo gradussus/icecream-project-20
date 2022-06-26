@@ -11,6 +11,7 @@
 @import './utils/mixins';
 
 // Components
+@import './components/button.scss';
 @import './components/header.scss';
 @import './components/products.scss';
 @import './components/about.scss';
@@ -19,4 +20,3 @@
 @import './components/reviews.scss';
 @import './components/contacts.scss';
 @import './components/footer.scss';
-@import './components/button.scss';

@@ -1,6 +1,7 @@
 .ice-cream-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   width: fit-content;
   block-size: fit-content;
 
@@ -11,19 +12,20 @@
   text-decoration: none;
 
   color: $primary-text-color;
+  fill: $primary-text-color;
 
   cursor: pointer;
   background-color: $accent-color;
   border: none;
   outline: none;
   border-radius: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
   height: 24px;
+  gap: 10%;
 
   &:hover,
   &:focus {
     color: $accent-color;
+    fill: $accent-color;
     background-color: $btn-hover;
   }
 
@@ -38,6 +40,7 @@
 
 .ice-cream-btn--secondary {
   color: $accent-color;
+  fill: $accent-color;
   background-color: $background-white;
 }
 
