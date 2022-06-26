@@ -1,15 +1,20 @@
 <header class="header" id="header">
-  <div class="header__mobile container">
+  <div class="header__item container">
     <a href="#" class="header__logo">
       <svg width="199" height="50" class="logo-icon">
         <use href="./image/sprite.svg#logo"></use>
       </svg>
     </a>
-    <button type="button" class="menu-button menu-button__open js-menu-button__open">
-      <svg width="20" height="12" class="menu-button__burger">
-        <use href="./image/sprite.svg#menu-burger"></use>
-      </svg>
-    </button>
+    <div class="header__buttons">
+      <button type="button" class="menu-button menu-button__open js-menu-button__open">
+        <svg width="20" height="12" class="menu-button__burger">
+          <use href="./image/sprite.svg#menu-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="menu-button__buy menu-button__buy--table">
+        Buy now <span>></span>
+      </button>
+    </div>
   </div>
 
   <div class="header__menu js-header__menu">
@@ -77,5 +82,7 @@
         </button>
       </div>
     </div>
+   
   </section>
+  <div class="backdrop is-hidden"></div>
 </main>
