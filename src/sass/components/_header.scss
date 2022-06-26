@@ -9,7 +9,7 @@
     
     @media screen and (min-width: 768px) {
       padding-top: 32px;
-      padding-bottom: 20px;    
+          
     }
   }
 
@@ -201,7 +201,6 @@
 }
 
 .hero {
-  // padding-top: 20px;
   height: 439px;
 
   background-color: $background-header-pink;
@@ -211,6 +210,7 @@
   @media screen and (min-width: 768px) {
     height: 326px;
     overflow: visible;
+  padding-top: 20px;
   }
 
   &__container {
@@ -246,8 +246,8 @@
 
       border-radius: 50%;
 
-      top: -44px;
-      left: 248px;
+      top: -64px;
+      left: 240px;
 
 
 
