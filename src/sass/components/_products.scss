@@ -227,6 +227,7 @@
             background-image: url(../images//products/products3-d-2x.png);
         }
     }
+
 }
 .products__title {
     font-family: $brand-font;
@@ -303,6 +304,7 @@
 }
 .products-box.is-open {
     display: block;
+    margin-bottom: 32px;
 }
 
 .products__icon {
@@ -317,7 +319,7 @@
 
 .products__btn.is-open .products__icon-up {
     display: block;
-    margin-bottom: 32px;
+    
 }
 .products-box__item {
     margin-bottom: 8px;

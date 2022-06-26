@@ -1,3 +1,6 @@
+body.modal-open {
+    overflow: hidden;
+}
 .about {
     background-color: $background-lightpink;
     padding-top: 60px;
@@ -102,4 +105,167 @@
 .button__icon {
     width: 6.43px;
     height: 10px;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+.modal {
+    position: relative;
+    max-width: 320px;
+    height: 100%;
+
+    padding: 30px;
+        background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+    background-color: $background-lightpink;
+        background-image:
+            linear-gradient(to right,
+                rgba(255,
+                    245,
+                    246, 0.4),
+                rgba(255,
+                    245,
+                    246, 0.4)),
+            url(../images/about/milk-m.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/about/milk-m-@2x.png);
+            }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop.is-hidden & {
+        transform: scale(0.9);
+    }
+
+    overflow-y: scroll;
+}
+
+.modal__btn {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.modal__btn-icon {
+    fill: $secondary-title-color;
+    stroke: $secondary-title-color;
+    
+    .modal__btn:hover &,
+    .modal__btn:focus & {
+        fill: $hover-color;
+        stroke: $hover-color;
+    }
+}
+.modal__content {
+        display: block;
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.58;
+            color: $secondary-text-color;
+}
+.modal__lable {
+    font-family: $brand-font;
+        font-size: 14px;
+        line-height: 1.12;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $secondary-title-color;
+        margin-bottom: 8px;
+}
+.modal__title {
+        font-family: $brand-font;
+            font-size: 20px;
+            line-height: 1.12;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        
+            color: $accent-color;
+}
+.modal__thumb {
+    margin-bottom: 20px;
+
+ /*   background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-lightpink;*/
+
+   /* background-image:
+        url(../images/about/milk-m.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/about/milk-m-@2x.png);
+    }*/
+}
+
+.modal__text {
+    display: block;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $secondary-text-color;
+    margin-bottom: 15px;
+}
+
+.modal__text--dark {
+    color: $default-text-color;
+}
+
+.modal__text--margin-bottom {
+    margin-bottom: 20px;
 }
