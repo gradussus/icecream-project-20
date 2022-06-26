@@ -197,17 +197,28 @@
 }
 
 .hero {
-  padding-top: 20px;
+  // padding-top: 20px;
   height: 439px;
 
   background-color: $background-header-pink;
 
   overflow: hidden;
 
+  @media screen and (min-width: 768px) {
+    height: 326px;
+    overflow: visible;
+  }
+
   &__container {
-    margin-top: -20px;
+    // margin-top: -20px;
     padding-top: 131px;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 2px;
+      
+    }
+    
   }
 
   &__circle {
@@ -223,6 +234,22 @@
     left: 11.25%;
 
     overflow: visible;
+
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      height: 333px;
+
+      border-radius: 50%;
+
+      top: -44px;
+      left: 248px;
+
+      z-index: 4;
+
+
+    }
+
+   
   }
 
   &__image {
@@ -230,6 +257,11 @@
 
     top: 9px;
     left: 81px;
+
+    @media screen and (min-width: 768px) {
+      top: 34px;
+        left: 74px;
+    }
   }
 
   &__space {
@@ -249,11 +281,22 @@
     color: $primary-text-color;
     text-transform: uppercase;
 
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+
+
     &--accent {
       font-size: 48px;
       line-height: 0.97;
 
       color: $title-text-color;
+
+      @media screen and (min-width: 768px) {
+          font-size: 34px;
+          line-height: 0.91;
+        }
     }
   }
 
@@ -288,7 +331,16 @@
    
   }
 
- 
+ &__milk {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+    top: 146px;
+    left: 32px;
+
+ }
 }
 
 
