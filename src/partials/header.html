@@ -6,39 +6,64 @@
       </svg>
     </a>
     <div class="header__buttons">
-      <button type="button" class="menu-button menu-button__open js-menu-button__open">
+      <button
+        type="button"
+        class="menu-button menu-button__open js-menu-button__open"
+      >
         <svg width="20" height="12" class="menu-button__burger">
           <use href="./image/sprite.svg#menu-burger"></use>
         </svg>
       </button>
-      <button type="button" class="menu-button__buy menu-button__buy--table">
-        Buy now <span>></span>
-      </button>
+      <a
+        href="#"
+        class="button button--secondary button--large menu-button__buy menu-button__buy--table"
+      >
+        Buy now
+
+        <svg class="button__icon" width="14" height="14">
+          <use href="./images/symbol-defs.svg#icon-angle-right"></use>
+        </svg>
+      </a>
     </div>
   </div>
 
   <div class="header__menu js-header__menu">
     <div class="header__inner">
-      <button type="button" class="menu-button menu-button__close js-menu-button__close">
+      <button
+        type="button"
+        class="menu-button menu-button__close js-menu-button__close"
+      >
         <svg width="14" height="14" class="menu-button__burger">
           <use href="./image/sprite.svg#menu-close"></use>
         </svg>
       </button>
-      <button type="button" class="menu-button__buy">
-        Buy now <span>></span>
-      </button>
+
+      <a
+        href="#"
+        class="button button--secondary button--large menu-button__buy"
+      >
+        Buy now
+
+        <svg class="button__icon" width="14" height="14">
+          <use href="./images/symbol-defs.svg#icon-angle-right"></use>
+        </svg>
+      </a>
     </div>
 
     <nav>
       <ul class="nav">
         <li class="nav__list">
-          <a class="nav__link nav__link--selection js-nav__link" href="#header">Home</a>
+          <a class="nav__link nav__link--selection js-nav__link" href="#header"
+            >Home</a
+          >
         </li>
         <li class="nav__list">
           <a class="nav__link js-nav__link" href="#reviews">About us</a>
         </li>
         <li class="nav__list">
-          <a class="nav__link js-nav__link" href="#advantages">How it's made?</a>
+          <a class="nav__link js-nav__link" href="#advantages"
+            >How it's made?</a
+          >
         </li>
         <li class="nav__list">
           <a class="nav__link js-nav__link" href="#gallery">Our products</a>
@@ -59,12 +84,18 @@
             <source
               srcset="
                 ./image/hero-icecream@1x.png 1x,
-                ./image/hero-icecream@2x.png 2x" media="(max-width:767px)"/>
-                
-                <source
+                ./image/hero-icecream@2x.png 2x
+              "
+              media="(max-width:767px)"
+            />
+
+            <source
               srcset="
                 ./image/hero-icecream-table@1x.png 1x,
-                ./image/hero-icecream-table@2x.png 2x" media="(min-width:768px)"/>
+                ./image/hero-icecream-table@2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
 
             <img src="./image/hero-icecream@1x.png" alt="Icecream" />
           </picture>
@@ -76,44 +107,59 @@
           made with
           <span class="hero__title hero__title--accent">passion</span>
         </h1>
-
-        <a href="#products">
-          <button type="button" class="hero__button">Products</button></a
-        >
-        <a href="#about">
-          <button type="button" class="hero__button hero__button--secondly">
-            How it's made?
-          </button></a>
+        <a href="#products" class="button"> Products </a>
+        <a href="#about" class="button button--secondary">
+          How it's made?
+        </a>
       </div>
       <div class="hero__milk">
         <picture>
-          <source srcset="
-            ./image/hero-milk-table@1x.png 1x,
-            ./image/hero-milk-table@2x.png 2x" />
-    
+          <source
+            srcset="
+              ./image/hero-milk-table@1x.png 1x,
+              ./image/hero-milk-table@2x.png 2x
+            "
+          />
+
           <img src="./image/hero-milk-table@1x.png" alt="Milk" />
         </picture>
       </div>
       <div class="hero__text">
         <div class="hero__text-inner">
-          <p>Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit, <br /> sed do eiusmod tempor <br />
-            incididunt ut labore et</p>
-          <p class="js-hero__text-inner text-hidden"> Lorem ipsum dolor sit amet, <br />
+          <p>
+            Lorem ipsum dolor sit amet, <br />
             consectetur adipiscing elit, <br />
+            sed do eiusmod tempor <br />
+            incididunt ut labore et
+          </p>
+          <p class="js-hero__text-inner text-hidden">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit, <br />
+          </p>
         </div>
-          <button type="button" class="hero__text-button">
-            <svg class="products__icon" width="6" height="6">
-              <use class="hero__icon-up icon-hidden" href="./images/products/symbol-defs.svg#icon-arrow-up"></use>
-              <use class="hero__icon-down" href="./images/products/symbol-defs.svg#icon-arrow-down"></use>
-            </svg>
-          </button>
+
+        <button type="button" class="hero__text-button">
+          <svg class="products__icon" width="6" height="6">
+            <use
+              class="hero__icon-up icon-hidden"
+              href="./images/products/symbol-defs.svg#icon-arrow-up"
+            ></use>
+            <use
+              class="hero__icon-down"
+              href="./images/products/symbol-defs.svg#icon-arrow-down"
+            ></use>
+          </svg>
+        </button>
       </div>
       <div class="hero__girl">
         <picture>
-          <source srcset="
-          ./image/hero-girl-table@1x.png 1x,
-          ./image/hero-girl-table@2x.png 2x" media="(min-width:768px)" />
+          <source
+            srcset="
+              ./image/hero-girl-table@1x.png 1x,
+              ./image/hero-girl-table@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
           <img src="./image/hero-girl-table@1x.png" alt="Girl with icecream" />
         </picture>
       </div>
@@ -130,8 +176,6 @@
         </div>
       </div>
     </div>
-
-   
   </section>
   <div class="backdrop is-hidden"></div>
 </main>

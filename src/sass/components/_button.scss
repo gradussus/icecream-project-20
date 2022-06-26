@@ -1,0 +1,55 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  block-size: fit-content;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-decoration: none;
+
+  color: $primary-text-color;
+  fill: $primary-text-color;
+
+  cursor: pointer;
+  background-color: $accent-color;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 24px;
+  gap: 10%;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    background-color: $btn-hover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.29;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.button--secondary {
+  color: $accent-color;
+  fill: $accent-color;
+  background-color: $background-white;
+}
+
+.button--large {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  height: 44px;
+  border-radius: 22px;
+}
