@@ -1,11 +1,25 @@
 .header {
   background-color: $background-header-pink;
 
-  &__mobile {
+  &__item {
     display: flex;
 
     padding-top: 8px;
-    padding-bottom: 5px;
+    // padding-bottom: 5px;
+    
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+          
+    }
+  }
+
+  &__buttons {
+    margin-left: auto;
+    display: flex;
+
+    @media screen and(min-width:768px) {
+      align-items: baseline;
+    }
   }
 
   &__menu {
@@ -18,18 +32,25 @@
 
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 
     transform: translateX(100%);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     z-index: 5;
+
+    @media screen and (min-width: 768px) {
+      width: 254px;
+      
+    }
   }
 
   &__menu.is-open {
     transform: translateX(0%);
   }
+
+
 
   &__inner {
     display: flex;
@@ -47,6 +68,14 @@
   border: none;
 
   cursor: pointer;
+
+ &__open {
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+ }
 
   &__close {
     margin-bottom: 21px;
@@ -80,6 +109,8 @@
     margin-bottom: 19px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 60px;
+    padding-right: 44px;
 
     align-items: center;
     text-align: center;
@@ -95,10 +126,38 @@
     border-radius: 22px;
 
     border: none;
+
+    cursor: pointer;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+      background-color: $btn-hover;
+    }
+
+    @media screen and(min-width: 768px) {
+      max-width: 186px;
+      padding-left: 40px;
+      padding-right: 36px;
+      
+    }
+
+
+    &--table {
+      @media screen and (max-width:767px) {
+        display: none;
+        
+      }
+      margin-bottom: 0;
+    }
   }
 }
 .menu-button__buy > span {
   margin-left: 27px;
+
+  @media screen and(min-width: 768px) {
+    margin-left: 13px;
+  }
 }
 .nav__list {
   display: block;
@@ -142,17 +201,29 @@
 }
 
 .hero {
-  padding-top: 20px;
   height: 439px;
 
   background-color: $background-header-pink;
 
   overflow: hidden;
 
+  @media screen and (min-width: 768px) {
+    height: 326px;
+    overflow: visible;
+  padding-top: 20px;
+  }
+
   &__container {
-    margin-top: -20px;
+    // margin-top: -20px;
     padding-top: 131px;
     position: relative;
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 2px;
+      
+    }
+    
   }
 
   &__circle {
@@ -168,6 +239,21 @@
     left: 11.25%;
 
     overflow: visible;
+
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      height: 333px;
+
+      border-radius: 50%;
+
+      top: -64px;
+      left: 240px;
+
+
+
+    }
+
+   
   }
 
   &__image {
@@ -175,9 +261,16 @@
 
     top: 9px;
     left: 81px;
+
+    @media screen and (min-width: 768px) {
+      top: 34px;
+        left: 74px;
+    }
   }
 
   &__space {
+  margin-bottom: 61px;
+
     position: relative;
     z-index: 2;
   }
@@ -194,11 +287,22 @@
     color: $primary-text-color;
     text-transform: uppercase;
 
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+
+
     &--accent {
       font-size: 48px;
       line-height: 0.97;
 
       color: $title-text-color;
+
+      @media screen and (min-width: 768px) {
+          font-size: 34px;
+          line-height: 0.91;
+        }
     }
   }
 
@@ -210,17 +314,191 @@
 
     font-size: 8px;
     line-height: 1.25;
-    color: $primary-text-color;
 
     background-color: $title-text-color;
     border-radius: 20px;
     border: none;
 
     cursor: pointer;
+
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
   }
+
 
   &__button--secondly {
     background-color: $primary-text-color;
-    color: $title-text-color;
   }
+
+  &__button > a {
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+  &__button--secondly > a {
+    color: $title-text-color;
+
+   
+  }
+
+ &__milk {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+    top: 146px;
+    left: 32px;
+
+ }
+
+ &__text {
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-left: 152px;
+
+  font-size: 8px;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color: $background-white;
+
+  // position: absolute;
+  // left: 184px;
+  // top: 187px;
+position: relative;
+  z-index: 4;
+
+  &-inner {
+    margin-bottom: 7px;
+  }
+ }
+
+ &__text-button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+ }
+
+   &__girl {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+ }
+
+  &__franchise {
+    @media screen and (max-width: 767px) {
+        display: none;
+      }
+    position: absolute;
+    top: 0;
+    right: 42px;
+  }
+
+  &__franchise-cafes {
+  width: 43px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  &:first-child {
+    margin-bottom: 17px;
+  }
+
+ }
+
+  &__franchise-title {
+    font-family: Titan One, cursive;
+    font-size: 28px;
+    line-height: 1.145;
+    letter-spacing: 4%;
+
+    text-align: right;
+
+    color: $accent-color;
+
+    z-index: 2;
+  }
+
+    &__franchise-text {
+      text-align: right;
+      font-size: 8px;
+      line-height: 1.25;
+      color: $background-white;
+
+    }
+
+    &-franchise-circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+
+      background-color:$background-white;
+
+      position: absolute;
+      top: 0px;
+      right: -10px;
+    }
+
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transform: scale(1);
+ 
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
+  z-index: 3;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.1);
+  }
+
+
+}
+
+.text-hidden {
+  display: none;
+}
+
+.icon-hidden {
+  display: none;
 }

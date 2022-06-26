@@ -1,32 +1,30 @@
-const btnBurgerMenu = document.querySelector('.menu-button__open');
-const headerMenu = document.querySelector('.header__menu');
-const btnCloseMenu = document.querySelector('.menu-button__close');
-const nav1CloseMenu = document.querySelector('.js1');
-const nav2CloseMenu = document.querySelector('.js2');
-const nav3CloseMenu = document.querySelector('.js3');
-const nav4CloseMenu = document.querySelector('.js4');
-const nav5CloseMenu = document.querySelector('.js5');
-    
-btnBurgerMenu.addEventListener('click', () => {
-    headerMenu.classList.toggle('is-open')
-});
+const btnBurgerMenu = document.querySelector('.js-menu-button__open');
+const headerMenu = document.querySelector('.js-header__menu');
+const btnCloseMenu = document.querySelector('.js-menu-button__close');
+const navLinkMenu = document.querySelectorAll('.js-nav__link');
+const backDrop = document.querySelector('.backdrop');
+const heroTextBtn = document.querySelector('.hero__text-button');
+const heroIconUp = document.querySelector('.hero__icon-up');
+const heroIconDown = document.querySelector('.hero__icon-down');
+const heroText = document.querySelector('.js-hero__text-inner')
 
-btnCloseMenu.addEventListener('click', () => {
-    headerMenu.classList.toggle('is-open')
-});
+btnBurgerMenu.addEventListener('click', isOpenMenu);
 
-nav1CloseMenu.addEventListener('click', () => {
+btnCloseMenu.addEventListener('click', isOpenMenu);
+
+navLinkMenu.forEach(el =>
+    el.addEventListener('click', isOpenMenu));
+
+
+function isOpenMenu() {
     headerMenu.classList.toggle('is-open')
-});
-nav2CloseMenu.addEventListener('click', () => {
-    headerMenu.classList.toggle('is-open')
-});
-nav3CloseMenu.addEventListener('click', () => {
-    headerMenu.classList.toggle('is-open')
-});
-nav4CloseMenu.addEventListener('click', () => {
-    headerMenu.classList.toggle('is-open')
-});
-nav5CloseMenu.addEventListener('click', () => {
-    headerMenu.classList.toggle('is-open')
-});
+    backDrop.classList.toggle('is-hidden');
+};
+
+heroTextBtn.addEventListener('click', () => {
+    heroText.classList.toggle('text-hidden');
+    heroIconUp.classList.toggle('icon-hidden');
+    heroIconDown.classList.toggle('icon-hidden');
+}
+
+);

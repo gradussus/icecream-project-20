@@ -5,6 +5,35 @@
     $background-lightpink 20%,
     $background-lightpink 100%
   );
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    background-image: linear-gradient(to bottom,
+      $background-white 44%,
+      $background-lightpink 44%,
+      $background-lightpink 100%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to bottom,
+      $background-white 15%,
+      $background-lightpink 15%,
+      $background-lightpink 100%);
+    }
+    }
+
+.contacts{
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    margin: -16px -32px -16px -32px;
+    margin-bottom: 44px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin: -16px;
+      margin-bottom: 44px;
+
+    }
 }
 
 .contacts__item {
@@ -15,6 +44,15 @@
   background: $background-white;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 3 * 32px) / 3);
+      margin: 16px;
+    }
+      
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
 }
 
 .category {
@@ -31,6 +69,10 @@
     width: 130px;
     background: #c2e297;
   }
+
+    @media screen and (min-width: 768px) {
+     margin-bottom: 32px;
+    }
 }
 
 .category__name {
@@ -43,6 +85,10 @@
   text-transform: uppercase;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: 768px){
+    font-size: 16px;
+  }
 }
 
 .location__name {
@@ -56,6 +102,16 @@
   letter-spacing: 0.04em;
 
   color: $default-text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  font-size: 14px;
+  margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
 
 .location__description {
@@ -67,6 +123,16 @@
   line-height: 1.5;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      font-size: 14px;
+      padding-right: 0px;
+    }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    padding-right: 30px;
+  }
 }
 
 .location__item::after,
@@ -79,6 +145,19 @@
 
   display: block;
   width: 100%;
+
+  @media screen and (min-width: 768px){
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+}
+
+.weekday-schedule__item{
+  margin-bottom: 8px;
+  
+  @media screen and (min-width: 768px){
+  margin-bottom: 12px;
+  }
 }
 
 .weekday-schedule__days,
@@ -89,6 +168,15 @@
   line-height: 1.83;
 
   color: $default-text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    
+}
 }
 
 .day-of-schedule__time,
@@ -99,6 +187,14 @@
   line-height: 1.83;
 
   color: $secondary-title-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contact-details__link {
@@ -109,12 +205,25 @@
   line-height: 1.5;
 
   color: $secondary-text-color;
+
+  &:hover,
+  &:focus{
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+
+  @media screen and (min-width: 1200px) {
+      font-size: 16px;
+  }
 }
 
 .btn {
   display: block;
   margin: auto;
-  min-width: 161.45px;
+  min-width: 161px;
   min-height: 44px;
   border-radius: 22px;
   border: none;
@@ -130,6 +239,13 @@
   cursor: pointer;
 }
 
+.contacts-btn{
+  @media screen and (min-width: 768px) {
+  display: flex;
+  justify-content: center;
+  }
+}
+
 .locations-btn {
   margin-bottom: 10px;
 
@@ -143,6 +259,19 @@
   &:focus {
     background-color: $hover-color;
   }
+
+    @media screen and (min-width: 768px) {
+      margin: 0px 15px 0px 0px;
+      min-width: 191px;
+    }
+
+    @media screen and (min-width:1200px) {
+      margin-right: 12px;
+    }
+
+    @media screen and (min-width:1200px) {
+      min-width: 198px;
+    }
 }
 
 .franchise-btn {
@@ -154,9 +283,18 @@
   &:focus {
     background-color: $btn-hover;
   }
+
+    @media screen and (min-width: 768px) {
+      margin: 0px;
+      min-width: 171px;
+    }
+
+    @media screen and (min-width:1200px) {
+      min-width: 168px;
+    }
 }
 
-.location-btn_name {
+.location-btn__name {
   margin-right: 8px;
 }
 

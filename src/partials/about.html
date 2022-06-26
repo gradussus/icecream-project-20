@@ -2,40 +2,83 @@
   <div class="container about__container">
     <p class="about__lable">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
+    <div class="about__content">
     <div class="about__img-thumb">
       <picture>
-        <source
-          media="(max-width: 767.98px)"
-          srcset="./images/about/cow-m.png 1x, ./images/about/cow-m-@2x.png 2x"
-          type="image/png"
-        />
-        <img
-          class="img"
-          src="./images/about/cow-m.png"
-          alt="Botle of milk and a cow"
-          width="280"
-          height="279"
-          loading="lazy"
-        />
+        <source media="(min-width: 1200px)" srcset="./images/about/cow-d.png 1x, ./images/about/cow-d-@2x.png 2x"
+          type="image/png" />
+        <source media="(min-width: 768px)" srcset="./images/about/cow-t.png 1x, ./images/about/cow-t-@2x.png 2x"
+          type="image/png" />
+        <source media="(max-width: 767.98px)" srcset="./images/about/cow-m.png 1x, ./images/about/cow-m-@2x.png 2x"
+          type="image/png" />
+        <img class="img" src="./images/about/cow-m.png" alt="Botle of milk and a cow" width="280" height="279"
+          loading="lazy" />
       </picture>
     </div>
     <div class="about__thumb">
-      <p class="about__text about__text--dark about__text--margin-bottom">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-        justo fringilla.
-      </p>
-      <p class="about__text about__text--margin-between">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt.
-      </p>
-      <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+      <div class="about__div">
+        <p class="about__text about__text--dark about__text--margin-bottom">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__text about__text--margin-between">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+      </div>
+      <button class="about-button" type="button" aria-label="Read more about" data-modal-open>
+        <span class="about-button__text">Read more</span>
+        >
+      </button>
     </div>
-    <button class="button" type="button" aria-label="Read more about">
-      <span class="button__text">Read more</span>
-      >
-    </button>
+    </div>
+
   </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" data-modal-close>
+      <svg class="modal__btn-icon" width="14px" height="14px">
+        <use href="./images/about/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal__content">
+      <p class="modal__lable">tradition and love</p>
+      <h2 class="modal__title">how it’s made?</h2>
+      <div class="modal__thumb">
+        <p class="modal__text modal__text--dark">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="modal__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="modal__text">Aliquam erat volutpat. Aenean accumsan.</p>
+        <p class="modal__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="modal__text">Aliquam erat volutpat. Aenean accumsan.</p>
+        <p class="modal__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="modal__text">Aliquam erat volutpat. Aenean accumsan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
