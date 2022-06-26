@@ -69,14 +69,14 @@
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         flex-basis: calc((100% - 32px) / 3);
         padding: 0 32px 40px;
-        &:not(last-child) {
+        &:not(:last-child) {
             margin-right: 16px;
         }
     }
     @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 64px) / 3);
         padding: 0 63px 60px;
-        &:not(last-child) {
+        &:not(:last-child) {
             margin-right: 32px;
         }
     }
@@ -173,6 +173,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primary-text-color;
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+
+
     &::after {
         content: " ";
         background-image: url(../images/products/dots.png);
@@ -201,6 +207,13 @@
     letter-spacing: 0.04em;
     color: $primary-text-color;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        line-height: 1.76;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
 }
 
 .products__btn {
@@ -262,6 +275,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primary-text-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
     
     &::after {
         content: " ";
@@ -288,5 +306,11 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $primary-text-color;
-   
+    @media screen and (min-width: 768px) {
+        line-height: 1.76;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
 }
