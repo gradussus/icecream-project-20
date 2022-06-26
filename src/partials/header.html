@@ -94,18 +94,43 @@
         </picture>
       </div>
       <div class="hero__text">
-        <p>Lorem ipsum dolor sit amet, <br /> 
-          consectetur adipiscing elit, <br /> sed do eiusmod tempor <br />
-          incididunt ut labore et</p>
+        <div class="hero__text-inner">
+          <p>Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit, <br /> sed do eiusmod tempor <br />
+            incididunt ut labore et</p>
+          <p class="js-hero__text-inner text-hidden"> Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit, <br /> sed do eiusmod tempor <br />
+            incididunt ut labore et
+        </div>
           <button type="button" class="hero__text-button">
             <svg class="products__icon" width="6" height="6">
-              <use class="products__icon-down" href="./images/products/symbol-defs.svg#icon-arrow-down"></use>
-              <use class="products__icon-up" href="./images/products/symbol-defs.svg#icon-arrow-up"></use>
+              <use class="hero__icon-up icon-hidden" href="./images/products/symbol-defs.svg#icon-arrow-up"></use>
+              <use class="hero__icon-down" href="./images/products/symbol-defs.svg#icon-arrow-down"></use>
             </svg>
           </button>
       </div>
-
+      <div class="hero__girl">
+        <picture>
+          <source srcset="
+          ./image/hero-girl-table@1x.png 1x,
+          ./image/hero-girl-table@2x.png 2x" media="(min-width:768px)" />
+          <img src="./image/hero-girl-table@1x.png" alt="Girl with icecream" />
+        </picture>
+      </div>
+      <div class="hero__franchise">
+        <div class="hero__franchise-cafes">
+          <p class="hero__franchise-title">16</p>
+          <p class="hero__franchise-text">cafes</p>
+          <div class="hero-franchise-circle"></div>
+        </div>
+        <div class="hero__franchise-cafes">
+          <p class="hero__franchise-title">23</p>
+          <p class="hero__franchise-text">food trucks</p>
+          <div class="hero-franchise-circle"></div>
+        </div>
+      </div>
     </div>
+
    
   </section>
   <div class="backdrop is-hidden"></div>
