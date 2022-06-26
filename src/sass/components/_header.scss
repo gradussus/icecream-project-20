@@ -49,6 +49,8 @@
     transform: translateX(0%);
   }
 
+
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -104,6 +106,8 @@
     margin-bottom: 19px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 60px;
+    padding-right: 44px;
 
     align-items: center;
     text-align: center;
@@ -120,8 +124,19 @@
 
     border: none;
 
+    cursor: pointer;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+      background-color: $btn-hover;
+    }
+
     @media screen and(min-width: 768px) {
-      width: 186px
+      max-width: 186px;
+      padding-left: 40px;
+      padding-right: 36px;
+      
     }
 
 
@@ -135,6 +150,10 @@
 }
 .menu-button__buy > span {
   margin-left: 27px;
+
+  @media screen and(min-width: 768px) {
+    margin-left: 13px;
+  }
 }
 .nav__list {
   display: block;
@@ -253,12 +272,23 @@
     border: none;
 
     cursor: pointer;
+
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
   }
 
   &__button--secondly {
     background-color: $primary-text-color;
     color: $title-text-color;
+
+   
   }
+
+ 
 }
 
 
@@ -284,4 +314,7 @@
     pointer-events: none;
     transform: scale(1.1);
   }
+
+
 }
+
