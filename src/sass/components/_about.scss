@@ -1,3 +1,6 @@
+body.modal-open {
+    overflow: hidden;
+}
 .about {
     background-color: $background-lightpink;
     padding-top: 60px;
@@ -133,16 +136,23 @@
 
 .modal {
     position: relative;
-    max-width: 450px;
+    max-width: 320px;
     height: 100%;
 
-    padding: 35px;
+    padding: 30px;
         background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
     background-color: $background-lightpink;
         background-image:
-                url(../images/about/milk-m.png);
+            linear-gradient(to right,
+                rgba(255,
+                    245,
+                    246, 0.4),
+                rgba(255,
+                    245,
+                    246, 0.4)),
+            url(../images/about/milk-m.png);
         
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -185,8 +195,14 @@
 }
 
 .modal__btn-icon {
-    fill: $hover-color;
-    stroke: $hover-color;
+    fill: $secondary-title-color;
+    stroke: $secondary-title-color;
+    
+    .modal__btn:hover &,
+    .modal__btn:focus & {
+        fill: $hover-color;
+        stroke: $hover-color;
+    }
 }
 .modal__content {
         display: block;
@@ -213,7 +229,7 @@
             text-align: center;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 25px;
         
             color: $accent-color;
 }
@@ -243,6 +259,7 @@
     font-size: 12px;
     line-height: 1.58;
     color: $secondary-text-color;
+    margin-bottom: 15px;
 }
 
 .modal__text--dark {
@@ -251,8 +268,4 @@
 
 .modal__text--margin-bottom {
     margin-bottom: 20px;
-}
-
-.modal__text--margin-between {
-    margin-bottom: 15px;
 }
