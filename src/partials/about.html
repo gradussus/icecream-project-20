@@ -3,42 +3,41 @@
     <p class="about__lable">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
     <div class="about__content">
-    <div class="about__img-thumb">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="./images/about/cow-d.png 1x, ./images/about/cow-d-@2x.png 2x"
-          type="image/png" />
-        <source media="(min-width: 768px)" srcset="./images/about/cow-t.png 1x, ./images/about/cow-t-@2x.png 2x"
-          type="image/png" />
-        <source media="(max-width: 767.98px)" srcset="./images/about/cow-m.png 1x, ./images/about/cow-m-@2x.png 2x"
-          type="image/png" />
-        <img class="img" src="./images/about/cow-m.png" alt="Botle of milk and a cow" width="280" height="279"
-          loading="lazy" />
-      </picture>
-    </div>
-    <div class="about__thumb">
-      <div class="about__div">
-        <p class="about__text about__text--dark about__text--margin-bottom">
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-          justo fringilla.
-        </p>
-        <p class="about__text about__text--margin-between">
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-          tincidunt.
-        </p>
-        <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+      <div class="about__img-thumb">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/about/cow-d.png 1x, ./images/about/cow-d-@2x.png 2x"
+            type="image/png" />
+          <source media="(min-width: 768px)" srcset="./images/about/cow-t.png 1x, ./images/about/cow-t-@2x.png 2x"
+            type="image/png" />
+          <source media="(max-width: 767.98px)" srcset="./images/about/cow-m.png 1x, ./images/about/cow-m-@2x.png 2x"
+            type="image/png" />
+          <img class="img" src="./images/about/cow-m.png" alt="Botle of milk and a cow" width="280" height="279"
+            loading="lazy" />
+        </picture>
       </div>
-      <button class="button button--secondary button--large about-button" type="button" aria-label="Read more about" data-modal-open>
-        <span class="about-button__text">Read more</span>
+      <div class="about__thumb">
+        <div class="about__div">
+          <p class="about__text about__text--dark about__text--margin-bottom">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+            cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+            justo fringilla.
+          </p>
+          <p class="about__text about__text--margin-between">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+            Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+            suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+            tincidunt.
+          </p>
+          <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+        </div>
+        <button class="button button--secondary button--large about-button" type="button" aria-label="Read more about" data-modal-open>
+          <span class="about-button__text">Read more</span>
           <svg class="button__icon" width="14" height="14">
             <use href="./images/symbol-defs.svg#icon-angle-right"></use>
           </svg>
-      </button>
+        </button>
+      </div>
     </div>
-    </div>
-
   </div>
 </section>
 
@@ -72,11 +71,11 @@
         </p>
         <button class="button button--secondary button--large buynow-button" type="button" aria-label="Read more about" data-form-open>
           <span class="about-button__text">Buy now</span>
-            <svg class="button__icon" width="14" height="14">
-              <use href="./images/symbol-defs.svg#icon-angle-right"></use>
-            </svg>
+          <svg class="button__icon" width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-angle-right"></use>
+          </svg>
         </button>
-        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -95,38 +94,34 @@
         cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
         justo fringilla.
       </p>
-    <form class="modal-form">
-      <div class="modal-form__thumb" role="group">
-        <label class="modal-form__label">
-          <span class="modal-form__text">Name</span>
-          <span class="modal-form__input-tumb">
-            <input class="input modal-form__input" type="text" name="text">
-            
-          </span>
-        </label>
-        <label class="modal-form__label">
-          <span class="modal-form__text">Phone number</span>
-          <span class="modal-form__input-tumb">
-            <input class="input modal-form__input" type="tel" name="phone_number">
-            
-          </span>
-        </label>
-        <label class="modal-form__label">
-          <span class="modal-form__text">E-mail</span>
-          <span class="modal-form__input-tumb">
-            <input class="input modal-form__input" type="email" name="email">
-            
-          </span>
-        </label>
-        <label class="modal-form__label">
-          <span class="modal-form__text">Comment</span>
-          <textarea class="input modal-form__textarea" name="feedback" rows="6" placeholder=""></textarea>
-        </label>
-      </div>
-      
-      <button class="button button--large buynow-button" type="submit">Send</button>
-    </form>
-  </div>
+      <form class="modal-form">
+        <div class="modal-form__thumb" role="group">
+          <label class="modal-form__label">
+            <span class="modal-form__text">Name</span>
+            <span class="modal-form__input-tumb">
+              <input class="input modal-form__input" type="text" name="text">
+            </span>
+          </label>
+          <label class="modal-form__label">
+            <span class="modal-form__text">Phone number</span>
+            <span class="modal-form__input-tumb">
+              <input class="input modal-form__input" type="tel" name="phone_number"> 
+            </span>
+          </label>
+          <label class="modal-form__label">
+            <span class="modal-form__text">E-mail</span>
+            <span class="modal-form__input-tumb">
+              <input class="input modal-form__input" type="email" name="email">
+            </span>
+          </label>
+          <label class="modal-form__label">
+            <span class="modal-form__text">Comment</span>
+            <textarea class="input modal-form__textarea" name="feedback" rows="6" placeholder=""></textarea>
+          </label>
+        </div>
+        <button class="button button--large buynow-button" type="submit">Send</button>
+      </form>
+    </div>
   </div>
 </div>
 <script src="./js/modal.js"></script>
