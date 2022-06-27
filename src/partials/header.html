@@ -5,6 +5,43 @@
         <use href="./image/sprite.svg#logo"></use>
       </svg>
     </a>
+    <div class="header__menu js-header__menu">
+      <div class="header__inner">
+        <button type="button" class="menu-button menu-button__close js-menu-button__close">
+          <svg width="14" height="14" class="menu-button__burger">
+            <use href="./image/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+    
+        <a href="#" class="button button--secondary button--large menu-button__buy">
+          Buy now
+    
+          <svg class="button__icon" width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-angle-right"></use>
+          </svg>
+        </a>
+      </div>
+    
+      <nav>
+        <ul class="nav">
+          <li class="nav__list">
+            <a class="nav__link nav__link--selection js-nav__link" href="#header">Home</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link js-nav__link" href="#reviews">About us</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link js-nav__link" href="#advantages">How it's made?</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link js-nav__link" href="#gallery">Our products</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link js-nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="header__buttons">
       <button
         type="button"
@@ -27,53 +64,7 @@
     </div>
   </div>
 
-  <div class="header__menu js-header__menu">
-    <div class="header__inner">
-      <button
-        type="button"
-        class="menu-button menu-button__close js-menu-button__close"
-      >
-        <svg width="14" height="14" class="menu-button__burger">
-          <use href="./image/sprite.svg#menu-close"></use>
-        </svg>
-      </button>
-
-      <a
-        href="#"
-        class="button button--secondary button--large menu-button__buy"
-      >
-        Buy now
-
-        <svg class="button__icon" width="14" height="14">
-          <use href="./images/symbol-defs.svg#icon-angle-right"></use>
-        </svg>
-      </a>
-    </div>
-
-    <nav>
-      <ul class="nav">
-        <li class="nav__list">
-          <a class="nav__link nav__link--selection js-nav__link" href="#header"
-            >Home</a
-          >
-        </li>
-        <li class="nav__list">
-          <a class="nav__link js-nav__link" href="#reviews">About us</a>
-        </li>
-        <li class="nav__list">
-          <a class="nav__link js-nav__link" href="#advantages"
-            >How it's made?</a
-          >
-        </li>
-        <li class="nav__list">
-          <a class="nav__link js-nav__link" href="#gallery">Our products</a>
-        </li>
-        <li class="nav__list">
-          <a class="nav__link js-nav__link" href="#contacts">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  
 </header>
 <main>
   <section class="hero">
@@ -104,7 +95,7 @@
       <div class="hero__space">
         <h1 class="hero__title">
           Ice cream <br />
-          made with
+          made with <br />
           <span class="hero__title hero__title--accent">passion</span>
         </h1>
         <a href="#products" class="button"> Products </a>
