@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelector("[data-form-open]"),closeModalBtn:document.querySelector("[data-form-close]"),modal:document.querySelector("[data-form]")};function o(){document.body.classList.toggle("form-open"),e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.d8a0fcc6.js.map
