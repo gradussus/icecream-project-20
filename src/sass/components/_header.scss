@@ -74,6 +74,7 @@
     @media screen and (min-width: 1200px) {
         display: none;
       }
+
   }
 }
 
@@ -218,7 +219,7 @@
   @media screen and (min-width: 768px) {
     height: 326px;
     overflow: visible;
-  padding-top: 20px;
+  // padding-top: 20px;
 
   @media screen and (min-width: 1200px) {
     height: 573px
@@ -233,7 +234,11 @@
     height: 100%;
 
     @media screen and (min-width: 768px) {
-      padding-top: 2px;
+      padding-top: 22px;
+      
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 76px;
       
     }
     
@@ -258,14 +263,14 @@
       height: 333px;
 
 
-      top: -64px;
+      top: -44px;
       left: 240px;
 
     @media screen and (min-width: 1200px) {
       width: 534px;
       height: 534px;
 
-      top: -60px;
+      top: -40px;
       left: 530px;
 
       
@@ -299,6 +304,10 @@
 
     position: relative;
     z-index: 2;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 108px;
+    }
   }
 
   &__title {
@@ -317,6 +326,11 @@
       font-size: 22px;
     }
 
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 24px;
+      font-size: 38px;
+    }
+
 
 
     &--accent {
@@ -329,6 +343,9 @@
           font-size: 34px;
           line-height: 0.91;
         }
+      @media screen and (min-width: 1200px) {
+         font-size: 58px;
+    }
     }
   }
 
@@ -352,6 +369,8 @@
     &:hover, &:focus {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       }
+
+
 
   }
 
@@ -380,6 +399,11 @@
     bottom: 16px;
     left: 32px;
 
+    @media screen and (min-width: 1200px) {
+      bottom: 60px;
+    
+      left: 16px;
+    }
  }
 
  &__text {
@@ -395,6 +419,12 @@
   
   color: $background-white;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 213px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
   // position: absolute;
   // left: 184px;
   // top: 187px;
@@ -403,6 +433,10 @@ position: relative;
 
   &-inner {
     margin-bottom: 7px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
   }
  }
 
@@ -423,6 +457,11 @@ position: relative;
       &:hover,
       &:focus {
         transform: scale(1.1);
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 26px;
+        height: 26px;
       }
  }
 
@@ -447,11 +486,11 @@ position: relative;
         display: none;
       }
     position: absolute;
-    top: 0;
+    top: 14px;
     right: 42px;
 
     @media screen and (min-width: 1200px) {
-      top: 48px;
+      top: 76px;
       right: 30px;
     }
   }
