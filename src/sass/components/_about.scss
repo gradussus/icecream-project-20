@@ -180,10 +180,10 @@ body.modal-open {
     }
 }
 .about-button {
-    display: flex;
-    align-items: center;
+ //   display: flex;
+ //   align-items: center;
 
-    font-family: $primary-font;
+ /*   font-family: $primary-font;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -193,32 +193,32 @@ body.modal-open {
     }
 
     color: $accent-color;
-    
-    cursor: pointer;
+  */  
+  /*  cursor: pointer;
     background-color: $background-white;
     border: none;
     outline: none;
     border-radius: 22px;
-        
+  */      
     min-width: 176px;
     min-height: 44px;
-    padding: 10px 37px;
+//    padding: 10px 37px;
     margin-top: 20px;
     @media screen and (min-width: 768px) {
         margin-top: 40px;
     }
-
-    display: block;
-            
-    &:hover,
-    &:focus {
-        background-color: $btn-hover;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buynow-button {
+    min-width: 160px;
+    min-height: 44px;
+    margin-top: 20px;
+        
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
     }
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-button__text {
-    margin-right: 14px;
-}
-
 .backdrop {
     position: fixed;
     z-index: 3;
@@ -245,6 +245,9 @@ body.modal-open {
         visibility: hidden;
     }
 }
+.backdrop--no-bg {
+    background: none;
+}
 
 .modal {
     position: relative;
@@ -252,7 +255,7 @@ body.modal-open {
     height: 100%;
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         max-width: 528px;
-        max-height: 80%;
+        max-height: 90%;
     }
     @media screen and (min-width: 1200px) {
         position: absolute;
@@ -260,7 +263,7 @@ body.modal-open {
         left: 50%;
         
         max-width: 528px;
-        max-height: 581px;
+        max-height: 680px;
         transform: translate(-50%, -50%);
     }
 
@@ -269,22 +272,21 @@ body.modal-open {
     background-repeat: no-repeat;
     background-position: center;
     background-color: $background-lightpink;
-        background-image:
-            linear-gradient(to right,
-                rgba(255,
-                    245,
-                    246, 0.4),
-                rgba(255,
-                    245,
-                    246, 0.4)),
+    background-image:
+        linear-gradient(to right,
+            rgba(255, 245, 246, 0.4),
+            rgba(255, 245, 246, 0.4)),
             url(../images/about/milk-m.png);
         
-            @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image:
-                    url(../images/about/milk-m-@2x.png);
-            }
+        background-image:
+            linear-gradient(to right,
+                rgba(255, 245, 246, 0.4),
+                rgba(255, 245, 246, 0.4)),
+            url(../images/about/milk-m-@2x.png);
+        }
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -314,6 +316,8 @@ body.modal-open {
 .modal__btn-icon {
     fill: $secondary-title-color;
     stroke: $secondary-title-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     .modal__btn:hover &,
     .modal__btn:focus & {
@@ -322,51 +326,36 @@ body.modal-open {
     }
 }
 .modal__content {
-        display: block;
-            font-family: $primary-font;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.58;
-            color: $secondary-text-color;
+    display: block;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $secondary-text-color;
 }
 .modal__lable {
     font-family: $brand-font;
-        font-size: 14px;
-        line-height: 1.12;
-        text-align: center;
-        text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.12;
+    text-align: center;
+    text-transform: uppercase;
     
-        color: $secondary-title-color;
-        margin-bottom: 8px;
+    color: $secondary-title-color;
+    margin-bottom: 8px;
 }
 .modal__title {
-        font-family: $brand-font;
-            font-size: 20px;
-            line-height: 1.12;
-            text-align: center;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin-bottom: 25px;
+    font-family: $brand-font;
+    font-size: 20px;
+    line-height: 1.12;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
         
-            color: $accent-color;
+    color: $accent-color;
 }
 .modal__thumb {
     margin-bottom: 20px;
-
- /*   background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $background-lightpink;*/
-
-   /* background-image:
-        url(../images/about/milk-m.png);
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image:
-            url(../images/about/milk-m-@2x.png);
-    }*/
 }
 
 .modal__text {
@@ -386,3 +375,156 @@ body.modal-open {
 .modal__text--margin-bottom {
     margin-bottom: 20px;
 }
+.modal-form {
+    &__thumb {
+        display: block;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $secondary-text-color;
+    }
+
+    &__pre-title {
+        font-family: $brand-font;
+        font-size: 14px;
+        line-height: 1.12;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $secondary-title-color;
+        margin-bottom: 8px;
+    }
+    &__title {
+        font-family: $brand-font;
+        font-size: 20px;
+        line-height: 1.12;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    
+        color: $accent-color;
+    }
+
+    &__text {
+        display: block;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $secondary-text-color;
+        margin-bottom: 7px;
+    }
+
+    &__input {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $secondary-text-color;
+        height: 40px;
+        width: 100%;
+        border: 1px solid $btn-hover;
+        border-radius: 24px;
+        outline: transparent;
+        padding-left: 16px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__textarea {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $secondary-text-color;
+        border: 1px solid $btn-hover;
+        border-radius: 24px;
+        height: 80px;
+
+        padding: 12px 16px;
+        resize: vertical;
+        outline: transparent;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+/*    &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 31px;
+    
+        
+    }
+
+    &__check-input {
+        position: absolute;
+    }
+
+    &__check-box {
+        width: 16px;
+        height: 15px;
+        border: 2px solid grey;
+        border-radius: 2px;
+        background-color: white;
+
+        margin-right: 7px;
+
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__check-box:focus,
+    &__check-box:hover {
+        border: 2px solid blue;
+        cursor: pointer;
+    }
+
+    &__check-input:checked+.modal-form__check-box {
+        border: 0.1em solid blue;
+        background-color: blue;
+    }
+
+    &__check-icon {
+        position: absolute;
+
+        fill: white;
+    }
+
+    &__check-link {
+        color: blue;
+    }*/
+}
+
+.modal-form__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.input:hover,
+.input:focus {
+    border-color: $hover-color;
+    cursor: pointer;
+}
+
+/*.modal-form__icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    fill: var(--dark-grey);
+
+    transition: fill $transitionLinks;
+
+    .input:hover+&,
+    .input:focus+& {
+        fill: var(--hover-blue);
+        cursor: pointer;
+    }
+}*/
