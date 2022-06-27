@@ -219,6 +219,11 @@
     height: 326px;
     overflow: visible;
   padding-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    height: 573px
+
+  }
   }
 
   &__container {
@@ -252,11 +257,19 @@
       width: 335px;
       height: 333px;
 
-      border-radius: 50%;
 
       top: -64px;
       left: 240px;
 
+    @media screen and (min-width: 1200px) {
+      width: 534px;
+      height: 534px;
+
+      top: -60px;
+      left: 530px;
+
+      
+    }
 
 
     }
@@ -273,6 +286,11 @@
     @media screen and (min-width: 768px) {
       top: 34px;
         left: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 56px;
+      left: 119px;
     }
   }
 
