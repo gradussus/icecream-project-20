@@ -6,10 +6,16 @@
 
     padding-top: 8px;
     // padding-bottom: 5px;
+   
     
     @media screen and (min-width: 768px) {
       padding-top: 32px;
           
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 37px;
+      align-items: center;
+      
     }
   }
 
@@ -20,9 +26,12 @@
     @media screen and(min-width:768px) {
       align-items: baseline;
     }
+
+   
   }
 
   &__menu {
+    @media screen and (max-width: 1199.98px) {
     padding-top: 15px;
 
     width: 100%;
@@ -44,10 +53,14 @@
       width: 254px;
       
     }
+        }
+
+    
   }
 
   &__menu.is-open {
     transform: translateX(0%);
+    z-index: 5;
   }
 
 
@@ -58,6 +71,11 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 320px;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+      }
+
   }
 }
 
@@ -68,6 +86,10 @@
   border: none;
 
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+      display: none;
+    }
 
  &__open {
   padding-left: 0;
@@ -116,7 +138,7 @@
     }
 
     &--table {
-      @media screen and (max-width:767px) {
+      @media screen and (max-width:767.98px) {
         display: none;
       }
       margin-bottom: 0;
@@ -124,18 +146,35 @@
   }
 }
 
-.nav__list {
-  display: block;
-  // margin-left: -20px;
-  // padding-left: 20px;
-  // margin-right: -20px;
-  // padding-right: 20px;
+.nav {
+  @media screen and (min-width: 1200px) {
+    margin-left: 128px;
 
+      display: flex;
+      // flex-direction: row;
+      position: relative;
+      z-index: 5;
+    
+    }
+}
+
+.nav__list {
+  @media screen and (max-width: 1199.98px) {
+  display: block;
+  
   border-top: 1px solid $border-menu-color;
 
   &:last-child {
     border-bottom: 1px solid $border-menu-color;
   }
+}
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+    
+  }
+ 
 }
 
 .nav__link {
@@ -163,6 +202,12 @@
   &--selection {
     color: $title-text-color;
   }
+
+  @media screen and(min-width: 1200px) {
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.3;
+  }
 }
 
 .hero {
@@ -175,7 +220,12 @@
   @media screen and (min-width: 768px) {
     height: 326px;
     overflow: visible;
-  padding-top: 20px;
+  // padding-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    height: 573px
+
+  }
   }
 
   &__container {
@@ -185,7 +235,11 @@
     height: 100%;
 
     @media screen and (min-width: 768px) {
-      padding-top: 2px;
+      padding-top: 22px;
+      
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 76px;
       
     }
     
@@ -209,11 +263,19 @@
       width: 335px;
       height: 333px;
 
-      border-radius: 50%;
 
-      top: -64px;
+      top: -44px;
       left: 240px;
 
+    @media screen and (min-width: 1200px) {
+      width: 534px;
+      height: 534px;
+
+      top: -40px;
+      left: 530px;
+
+      
+    }
 
 
     }
@@ -231,6 +293,11 @@
       top: 34px;
         left: 74px;
     }
+
+    @media screen and (min-width: 1200px) {
+      top: 56px;
+      left: 119px;
+    }
   }
 
   &__space {
@@ -238,6 +305,10 @@
 
     position: relative;
     z-index: 2;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 108px;
+    }
   }
 
   &__title {
@@ -256,6 +327,11 @@
       font-size: 22px;
     }
 
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 24px;
+      font-size: 38px;
+    }
+
 
 
     &--accent {
@@ -268,6 +344,9 @@
           font-size: 34px;
           line-height: 0.91;
         }
+      @media screen and (min-width: 1200px) {
+         font-size: 58px;
+    }
     }
   }
 
@@ -292,6 +371,8 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       }
 
+
+
   }
 
 
@@ -310,19 +391,25 @@
   }
 
  &__milk {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
   position: absolute;
-    top: 146px;
+    // top: 136px;
+    bottom: 16px;
     left: 32px;
 
+    @media screen and (min-width: 1200px) {
+      bottom: 60px;
+    
+      left: 16px;
+    }
  }
 
  &__text {
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   margin-left: 152px;
@@ -333,6 +420,12 @@
   
   color: $background-white;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 213px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
   // position: absolute;
   // left: 184px;
   // top: 187px;
@@ -341,6 +434,10 @@ position: relative;
 
   &-inner {
     margin-bottom: 7px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
   }
  }
 
@@ -362,25 +459,41 @@ position: relative;
       &:focus {
         transform: scale(1.1);
       }
+
+      @media screen and (min-width: 1200px) {
+        width: 26px;
+        height: 26px;
+      }
  }
 
    &__girl {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       display: none;
     }
 
   position: absolute;
   right: 32px;
   bottom: 0;
- }
+ 
+
+  @media screen and (min-width: 1200px) {
+    right: 10px;
+    
+  }
+}
 
   &__franchise {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         display: none;
       }
     position: absolute;
-    top: 0;
+    top: 14px;
     right: 42px;
+
+    @media screen and (min-width: 1200px) {
+      top: 76px;
+      right: 30px;
+    }
   }
 
   &__franchise-cafes {
@@ -396,6 +509,15 @@ position: relative;
     margin-bottom: 17px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: 74px;
+    height: 71px;
+
+    &:first-child {
+        margin-bottom: 18px;
+      }
+  }
+
  }
 
   &__franchise-title {
@@ -409,6 +531,10 @@ position: relative;
     color: $accent-color;
 
     z-index: 2;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+    }
   }
 
     &__franchise-text {
@@ -417,6 +543,10 @@ position: relative;
       line-height: 1.25;
       color: $background-white;
 
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.3;
+      }
     }
 
     &-franchise-circle {
@@ -429,6 +559,15 @@ position: relative;
       position: absolute;
       top: 0px;
       right: -10px;
+
+      @media screen and(min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+
+        right: -18px;
+        top: -4px;
+
+      }
     }
 
 }
@@ -467,3 +606,4 @@ position: relative;
 .icon-hidden {
   display: none;
 }
+
