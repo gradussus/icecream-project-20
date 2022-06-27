@@ -30,9 +30,11 @@
         </p>
         <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
       </div>
-      <button class="about-button" type="button" aria-label="Read more about" data-modal-open>
+      <button class="button button--secondary button--large about-button" type="button" aria-label="Read more about" data-modal-open>
         <span class="about-button__text">Read more</span>
-        >
+          <svg class="button__icon" width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-angle-right"></use>
+          </svg>
       </button>
     </div>
     </div>
@@ -49,7 +51,7 @@
     </button>
     <div class="modal__content">
       <p class="modal__lable">tradition and love</p>
-      <h2 class="modal__title">how it’s made?</h2>
+      <h3 class="modal__title">how it’s made?</h3>
       <div class="modal__thumb">
         <p class="modal__text modal__text--dark">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
@@ -68,12 +70,63 @@
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt.
         </p>
-        <button class="about-button" type="button" aria-label="Read more about" data-modal-open>
+        <button class="button button--secondary button--large buynow-button" type="button" aria-label="Read more about" data-form-open>
           <span class="about-button__text">Buy now</span>
-          >
+            <svg class="button__icon" width="14" height="14">
+              <use href="./images/symbol-defs.svg#icon-angle-right"></use>
+            </svg>
         </button>
         </div>
     </div>
   </div>
 </div>
+<div class="backdrop is-hidden backdrop--no-bg" data-form>
+  <div class="modal">
+    <button class="modal__btn" data-form-close>
+      <svg class="modal__btn-icon" width="14px" height="14px">
+        <use href="./images/about/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__lable">to buy ice cream</p>
+    <h3 class="modal__title">fill this form</h3>
+    <div class="modal__thumb">
+      <p class="modal__text modal__text--dark">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+        justo fringilla.
+      </p>
+    <form class="modal-form">
+      <div class="modal-form__thumb" role="group">
+        <label class="modal-form__label">
+          <span class="modal-form__text">Name</span>
+          <span class="modal-form__input-tumb">
+            <input class="input modal-form__input" type="text" name="text"-->
+            
+          </span>
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__text">Phone number</span>
+          <span class="modal-form__input-tumb">
+            <input class="input modal-form__input" type="tel" name="phone_number">
+            
+          </span>
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__text">E-mail</span>
+          <span class="modal-form__input-tumb">
+            <input class="input modal-form__input" type="email" name="email">
+            
+          </span>
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__text">Comment</span>
+          <textarea class="input modal-form__textarea" type="text" name="feedback" rows="6" placeholder=""></textarea>
+        </label>
+      </div>
+      
+      <button class="button button--large buynow-button" type="submit">Send</button>
+    </form-->
+  </div>
+</div>
 <script src="./js/modal.js"></script>
+<script src="./js/modal-form.js"></script>
