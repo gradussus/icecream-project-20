@@ -434,7 +434,13 @@ position: relative;
   position: absolute;
   right: 32px;
   bottom: 0;
- }
+ 
+
+  @media screen and (min-width: 1200px) {
+    right: 10px;
+    
+  }
+}
 
   &__franchise {
     @media screen and (max-width: 767px) {
@@ -443,6 +449,11 @@ position: relative;
     position: absolute;
     top: 0;
     right: 42px;
+
+    @media screen and (min-width: 1200px) {
+      top: 48px;
+      right: 30px;
+    }
   }
 
   &__franchise-cafes {
@@ -458,6 +469,15 @@ position: relative;
     margin-bottom: 17px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: 74px;
+    height: 71px;
+
+    &:first-child {
+        margin-bottom: 18px;
+      }
+  }
+
  }
 
   &__franchise-title {
@@ -471,6 +491,10 @@ position: relative;
     color: $accent-color;
 
     z-index: 2;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+    }
   }
 
     &__franchise-text {
@@ -479,6 +503,10 @@ position: relative;
       line-height: 1.25;
       color: $background-white;
 
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.3;
+      }
     }
 
     &-franchise-circle {
@@ -491,6 +519,15 @@ position: relative;
       position: absolute;
       top: 0px;
       right: -10px;
+
+      @media screen and(min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+
+        right: -18px;
+        top: -4px;
+
+      }
     }
 
 }
