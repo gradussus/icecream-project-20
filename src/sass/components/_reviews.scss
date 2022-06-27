@@ -6,6 +6,8 @@
 .swiper-slide, 
 .swiper-wrapper {
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .customer-card{
@@ -35,24 +37,31 @@
 }
 .customer-card__item:nth-child(2){
     background-color: $review-card-bg-color;
+
     min-height: 138px;
+
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 43px;
     padding-bottom: 17px;
-
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 18px;
 
     box-shadow: 10px 10px 8px -8px rgba(0, 0, 0, 0.3);
 
+    @media screen and (min-width: 320px){
+        width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     @media screen and (min-width: 768px) {
-        margin-right: 42px;
-        margin-left: 42px;
+        width: 620px;
         padding: 20px 6px 36px;
     };
     @media screen and (min-width: 1200px) {
-        margin-right: 100px;
-        margin-left: 100px;
+        width: 968px;
         padding: 44px 74px 32px
     };
 
