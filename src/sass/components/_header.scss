@@ -31,7 +31,7 @@
   }
 
   &__menu {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
     padding-top: 15px;
 
     width: 100%;
@@ -138,7 +138,7 @@
     }
 
     &--table {
-      @media screen and (max-width:767px) {
+      @media screen and (max-width:767.98px) {
         display: none;
       }
       margin-bottom: 0;
@@ -159,7 +159,7 @@
 }
 
 .nav__list {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
   display: block;
   
   border-top: 1px solid $border-menu-color;
@@ -391,7 +391,7 @@
   }
 
  &__milk {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
@@ -409,7 +409,7 @@
 
  &__text {
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   margin-left: 152px;
@@ -467,7 +467,7 @@ position: relative;
  }
 
    &__girl {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       display: none;
     }
 
@@ -483,7 +483,7 @@ position: relative;
 }
 
   &__franchise {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         display: none;
       }
     position: absolute;
