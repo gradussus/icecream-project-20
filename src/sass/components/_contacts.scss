@@ -490,7 +490,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.franchise-modal-form__input:focus + .franchise-modal-form__label{
+.franchise-modal-form__input:focus + .franchise-modal-form__label,
+.franchise-modal-form__input:not(:placeholder-shown)+.franchise-modal-form__label{
   transform: translateY(-7px);
   color:$title-text-color;
 
@@ -503,7 +504,7 @@
   
   font-family: $primary-font;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.58;
   color: $secondary-text-color;
   height: 36px;
@@ -516,8 +517,18 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-  &:focus{
+  &:not(:placeholder-shown){
     border: 1px solid $hover-color;
+  }
+
+  &::placeholder{
+    opacity: 0;
+    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
   }
 }
 
@@ -542,13 +553,23 @@
   
   font-family: $primary-font;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.58;
   color: $secondary-text-color;
 
   &:hover,
   &:focus {
     border: 1px solid $hover-color;
+  }
+
+  &::placeholder {
+    opacity: 0;
+  
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &:focus::placeholder {
+    opacity: 1;
   }
 }
 
