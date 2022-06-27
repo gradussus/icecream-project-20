@@ -13,7 +13,10 @@ btnBurgerMenu.addEventListener('click', isOpenMenu);
 btnCloseMenu.addEventListener('click', isOpenMenu);
 
 navLinkMenu.forEach(el =>
-    el.addEventListener('click', isOpenMenu));
+    el.addEventListener('click', () => {
+        headerMenu.classList.toggle('is-open');
+        backDrop.classList.add('is-hidden');
+    }));
 
 
 function isOpenMenu() {
