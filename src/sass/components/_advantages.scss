@@ -8,14 +8,20 @@
 
 .advantages-list {
   @media screen and (max-width: 767.98px) {
-    padding-right: 60px;
-
     &__item {
       &:not(:last-child) {
         margin-bottom: 32px;
       }
     }
   }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  text-align: center;
 
   &__title {
     font-family: $brand-font;
@@ -28,23 +34,29 @@
   }
 
   &__text {
+    @media screen and (max-width: 767.98px) {
+      max-width: 230px;
+    }
+
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
     color: $default-text-color;
-    margin-bottom: 0;
+    margin: auto;
   }
 }
 
 .milk-logo::before {
   content: '';
-  display: inline-block;
+  display: block;
   background-image: url(../images/advantages/advantage-icon1.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 33px;
   height: 50px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
@@ -53,13 +65,15 @@
 
 .fruits-logo::before {
   content: '';
-  display: inline-block;
+  display: block;
   background-image: url(../images/advantages/advantage-icon2.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
@@ -68,13 +82,15 @@
 
 .heart-logo::before {
   content: '';
-  display: inline-block;
+  display: block;
   background-image: url(../images/advantages/advantage-icon3.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 44px;
   height: 50px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
@@ -89,7 +105,7 @@
 
   .advantages-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: -32px;
     max-width: 1199px;
@@ -117,7 +133,7 @@
 
   .advantages-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: -16px;
 
