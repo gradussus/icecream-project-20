@@ -26,14 +26,13 @@
   white-space: nowrap;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
 
 
   &:hover,
   &:focus {
-    color: $accent-color;
+
     fill: $accent-color;
-    background-color: $btn-hover;
+    background-color: $hover-color;
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,6 +48,12 @@
   color: $accent-color;
   fill: $accent-color;
   background-color: $background-white;
+
+  &:hover,
+  &:focus {
+
+    background-color: $btn-hover;
+  }
 }
 
 .button--large {
@@ -57,9 +62,10 @@
   line-height: 1.31;
   height: 44px;
   border-radius: 22px;
+
 }
 
 
 .button__animation {
-      animation: hero-title-accent 2s cubic-bezier(0.5, 1, 0.89, 1) 2s 1 normal both;
+  animation: hero-title-accent 2s cubic-bezier(0.5, 1, 0.89, 1) 2s 1 normal both;
 }
