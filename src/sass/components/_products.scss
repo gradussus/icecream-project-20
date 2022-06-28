@@ -98,7 +98,7 @@
         margin-bottom: 60px;
     }
 }
-.products__title--pink::before {
+.products__item--pink::before {
     content: " ";
     background-image: url(../images/products/products1.png);
     background-repeat: no-repeat;
@@ -138,7 +138,7 @@
         }
     }
 }
-.products__title--peach::before {
+.products__item--peach::before {
     content: " ";
     background-image: url(../images/products/products2.png);
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@
         }
     }
 }
-.products__title--mint::before {
+.products__item--mint::before {
     content: " ";
     background-image: url(../images/products/products3.png);
     background-repeat: no-repeat;
