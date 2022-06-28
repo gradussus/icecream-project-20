@@ -85,10 +85,10 @@
     &--pink, .products-box--pink {
         background-color: $background-header-pink;
     }
-    &--pich,  .products-box--pich {
+    &--peach, .products-box--peach {
         background-color: #F0D1A5;
     }
-    &--mint,  .products-box--mint  {
+    &--mint, .products-box--mint {
         background-color: #C2E297;
     }
 }
@@ -144,7 +144,7 @@
         }
     }
 }
-.products__thumb--pich::after {
+.products__thumb--peach::after {
     content: " ";
     background-image: url(../images/products/products2.png);
     background-repeat: no-repeat;
@@ -280,7 +280,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    animation: swing 6s ease-in-out infinite forwards;
     &:hover,
     &:focus {
        background-color: $btn-hover ;
@@ -326,7 +325,6 @@
     }
     @media screen and (min-width: 768px) {
         width: 100%;
-       
         transform: translateY(-100%);
         opacity: 1;  
     }
@@ -390,7 +388,7 @@
             background-image: url(../images//products/dots-2x.png);
         }
         @media screen and (min-width: 1200px) {
-            margin: 28px auto  25px;
+            margin: 32px auto 26px;
         }
     }
 }
@@ -409,6 +407,27 @@
         font-size: 16px;
     }
 }
+@keyframes btn-anim {
+    0% {
+      transform: rotate(30deg);
+    }
+  
+    5% {
+      transform: rotate(-30deg);
+    }
+  
+    10% {
+      transform: rotate(15deg);
+    }
+  
+    14% {
+      transform: rotate(-15deg);
+    }
+  
+    18% {
+      transform: rotate(0);
+    }
+}
 .scroll-btn {
     position: fixed;
     bottom: 50px;
@@ -423,15 +442,12 @@
     cursor: pointer;
     background-color: $background-mobile;
     z-index: 10;
-    animation: swing 6s ease-in-out infinite forwards;
+    animation: btn-anim 6s ease-in-out infinite forwards;
     &:hover,
     &:focus {
-       
        background-color: $background-header-pink ;
     }
 }
-
 .scroll-btn__svg {
     fill: $background-white;
 }
-
