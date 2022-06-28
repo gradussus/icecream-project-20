@@ -280,10 +280,10 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    transform: scale(1);
+    animation: swing 6s ease-in-out infinite forwards;
     &:hover,
     &:focus {
-       transform: scale(1.1);
+       background-color: $btn-hover ;
     }
 }
 .products__thumb-overlay {
@@ -423,7 +423,15 @@
     cursor: pointer;
     background-color: $background-mobile;
     z-index: 10;
+    animation: swing 6s ease-in-out infinite forwards;
+    &:hover,
+    &:focus {
+       
+       background-color: $background-header-pink ;
+    }
 }
+
 .scroll-btn__svg {
     fill: $background-white;
 }
+
