@@ -24,10 +24,11 @@
   height: 24px;
   gap: 10%;
   white-space: nowrap;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
-
+  /*
+  animation: hero-title-accent 2s cubic-bezier(0.5, 1, 0.89, 1) 2s 1 normal both;
+  */
 
   &:hover,
   &:focus {
@@ -57,9 +58,4 @@
   line-height: 1.31;
   height: 44px;
   border-radius: 22px;
-}
-
-
-.button__animation {
-      animation: hero-title-accent 2s cubic-bezier(0.5, 1, 0.89, 1) 2s 1 normal both;
 }

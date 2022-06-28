@@ -319,14 +319,10 @@
   }
 
   &__space {
-  
+  margin-bottom: 61px;
 
     position: relative;
     z-index: 2;
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 61px;
-    }
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 108px;
@@ -399,20 +395,6 @@
 
 
 
-  }
-
-  &__buttons-list {
-    display: flex;
-  }
-
-  &__buttons-list__inner {
-    &:first-child {
-      margin-right: 8px;
-
-      @media screen and (min-width: 1200px) {
-        margin-right: 12px;
-      }
-    }
   }
 
 
