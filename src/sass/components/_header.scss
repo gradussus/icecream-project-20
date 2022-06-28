@@ -4,6 +4,7 @@
     display: flex;
     padding-top: 8px;
     // padding-bottom: 5px;
+
    
     
     @media screen and (min-width: 768px) {
@@ -15,6 +16,10 @@
       align-items: center;
       
     }
+  }
+
+  &__logo {
+    animation: header-animation 2s cubic-bezier(0.5, 1, 0.89, 1) 0s 1 normal both;
   }
 
   &__buttons {
@@ -479,7 +484,7 @@ position: relative;
   right: 32px;
   bottom: 0;
 
-            animation: girlAnim 2s cubic-bezier(0.5, 1, 0.89, 1) 0s infinite reverse both;
+  animation: girlAnim 2s cubic-bezier(0.5, 1, 0.89, 1) 0s infinite reverse both;
 
   @media screen and (min-width: 1200px) {
     right: 10px;
@@ -613,83 +618,3 @@ position: relative;
   display: none;
 }
 
-@keyframes girlAnim {
-
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translateX(-5px);
-  }
-
-  20%,
-  40%,
-  60% {
-    transform: translateX(5px);
-  }
-
-  80% {
-    transform: translateX(3px);
-  }
-
-  90% {
-    transform: translateX(-3px);
-  }
-}
-
-@keyframes CircleFranchise {
-  0% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-    transform-origin: center center;
-  }
-
-  10% {
-    animation-timing-function: ease-in;
-    transform: scale(0.91);
-  }
-
-  17% {
-    animation-timing-function: ease-out;
-    transform: scale(0.98);
-  }
-
-  33% {
-    animation-timing-function: ease-in;
-    transform: scale(0.87);
-  }
-
-  45% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-}
-
-@keyframes hero-title {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes hero-title-accent {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
