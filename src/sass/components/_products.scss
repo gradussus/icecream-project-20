@@ -349,7 +349,8 @@
 .products__icon {
     display: block;
     border-radius: 50%;
-    fill: $accent-color
+    fill: $accent-color;
+  animation: btnAnim 4s cubic-bezier(0.5, 1, 0.89, 1) 0s infinite reverse both;
 }
 .products__icon-up {
     display: none;
