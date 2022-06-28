@@ -127,13 +127,91 @@
         </ul>
       </li>
     </ul>
-    <div class="contacts-btn">
-    <button class="locations-btn btn" type="button">
+    <div class="contacts-btns">
+    <button class="locations-btn contact-btn" type="button" location-modal-open>
       <span class="location-btn__name">Our Locations</span> >
     </button>
-    <button class="franchise-btn btn" type="button">
+
+    <button class="franchise-btn contact-btn" type="button" contacts-modal-open>
       <span class="franchise-btn__name">Franchise</span> >
     </button>
     </div>
+
+    <!-- <div class="locations-backdrop is-hidden" location-modal >
+      <div class="locations-modal">
+        <button class="locations-modal__btn" location-modal-close>
+          <svg class="locations-modal__btn-icon" width="14px" height="14px">
+            <use href="./image/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+    </div> -->
+    
+    <div class="contacts-backdrop is-hidden" contacts-modal>
+      <div class="contacts-modal">
+        <button class="contact-modal__btn" contacts-modal-close>
+          <svg class="contact-modal__btn-icon" width="14px" height="14px">
+            <use href="./image/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+        <b class="franchise-form-title">Become our partner, let's work together</b>
+        <form class="franchise-modal-form">
+         <div class="franchise-modal-form-data">
+          <label class="franchise-modal-form__group">
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Jack"/>
+            <span class="franchise-modal-form__label">Name</span>
+          </label>
+    
+          <label class="franchise-modal-form__group">
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Sparrow"/>
+            <span class="franchise-modal-form__label">Surname</span>
+          </label>
+    
+          <label class="franchise-modal-form__group">
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="+380576547924"/>
+            <span class="franchise-modal-form__label">Phone</span>
+          </label>
+    
+          <label class="franchise-modal-form__group">
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="info@gmail.com"/>
+            <span class="franchise-modal-form__label">Mail</span>
+          </label>
+    
+          <label class="franchise-modal-form__group">
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Kyiv"/>
+            <span class="franchise-modal-form__label">City to open an establishment</span>
+          </label>
+    
+          <label class="franchise-modal-form__group">
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Cafe/Foodtruck"/>
+          <span class="franchise-modal-form__label">Type of category</span>
+          </label>
+          </div>
+    
+          <label class="franchise-textarea__group">
+            <textarea class="franchise-modal-form__message" name="user-message" rows="3" placeholder="Type message"></textarea>
+            <span class="franchise-modal-form__label">Your message</span>
+          </label>
+    
+          <label class="franchise-modal-form__policy-group">
+            <input class="franchise-modal-form__checkbox visually-hidden" type="checkbox" />
+            <span class="franchise-modal-form__custom-checkbox">
+              <svg class="franchise-modal-form__custom-checkbox-icon" width="8" height="8" viewBox="0 0 32 32">
+                <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+              </svg>
+            </span>
+            <span class="franchise-modal-form__policy-desc">
+              I agree with the newsletter and accept
+              <a class="franchise-modal-form__policy-link" href="#">Terms of an agreement</a>
+            </span>
+          </label>
+    
+          <button class="franchise-modal-form__submit-btn contact-btn" type="submit">
+            Send a request
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
+
+<script src="./js/contacts-modal.js"></script>

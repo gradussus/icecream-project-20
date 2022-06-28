@@ -2,12 +2,19 @@
   @media screen and (max-width: 767.98px) {
     padding-top: 40px;
   }
+
   background-color: $background-lightpink;
 }
 
-.advantages-box {
-  &:not(:last-child) {
-    margin-bottom: 32px;
+.advantages-list {
+  @media screen and (max-width: 767.98px) {
+    padding-right: 60px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
   }
 
   &__title {
@@ -38,6 +45,10 @@
   width: 33px;
   height: 50px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
 
 .fruits-logo::before {
@@ -49,6 +60,10 @@
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
 
 .heart-logo::before {
@@ -60,4 +75,66 @@
   width: 44px;
   height: 50px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .section-advantages {
+    padding-top: 60px;
+  }
+
+  .advantages-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: -32px;
+    max-width: 1199px;
+
+    &__item {
+      max-width: 180px;
+      flex-basis: calc((100% - 3 * 10px) / 3);
+      margin-left: 32px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1200px) {
+
+  .advantages-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: -16px;
+
+    &__item {
+      max-width: 280px;
+      flex-basis: calc((100% - 3 * 32px) / 3);
+      margin-left: 16px;
+    }
+
+    &__title {
+      font-size: 58px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.71;
+    }
+  }
 }
