@@ -3,6 +3,9 @@
 }
 
 .wrap {
+  @media screen and(max-width:1199.98px) {
+    margin-bottom: 40px;
+  }
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-between;
@@ -14,12 +17,13 @@
 }
 
 .footer__wrap {
-  @media screen and(min-width:320px) and(max-width:767.98px) {
+  @media screen /*and(min-width:320px) */ and(max-width:767.98px) {
     max-width: 234px;
+    margin-bottom: 40px;
   }
   @media screen and(min-width:768px) and(max-width:1199.98px) {
     max-width: 340px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
 }
 
@@ -56,9 +60,6 @@
   text-transform: uppercase;
 
   color: $title-text-color;
-  @media screen and(max-width:767.98px) {
-    margin-bottom: 40px;
-  }
 
   @media screen and(min-width:768px) {
     font-size: 48px;
@@ -74,7 +75,7 @@
   justify-content: flex-end;
   margin-bottom: 40px;
 }
-.icons__item{
+.icons__item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -95,17 +96,17 @@
   pointer-events: none;
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: $primary-text-color;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &::before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background: $primary-text-color;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .icons__item:hover .tooltip {
   top: -45px;
@@ -120,13 +121,12 @@
   background: $accent-color;
   color: $primary-text-color;
 }
-.icons__item:hover .tooltip--telegram{
+.icons__item:hover .tooltip--telegram {
   left: -20px;
 }
-.icons__item:hover .tooltip--facebook{
+.icons__item:hover .tooltip--facebook {
   left: -22px;
 }
-
 
 .icons__item:not(:last-child) {
   margin-right: 28px;
@@ -142,13 +142,14 @@
 .icons__svg {
   fill: $social-icon-color;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  .icons__link:hover &,
+  .icons__link:focus & {
+    fill: $accent-color;
+  }
+
   @media screen and(min-width:768px) {
     width: 34px;
     height: 34px;
-    .icons__link:hover &,
-    .icons__link:focus & {
-      fill: $accent-color;
-    }
   }
 }
 
@@ -162,9 +163,9 @@
   text-decoration: none;
   color: $title-text-color;
   text-align: end;
-  @media screen and(max-width:767.98px) {
-    margin-bottom: 40px;
-  }
+  // @media screen and(max-width:767.98px) {
+  //   margin-bottom: 40px;
+  // }
 
   @media screen and(min-width:768px) {
     font-size: 14px;
