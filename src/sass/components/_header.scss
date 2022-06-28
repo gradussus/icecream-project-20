@@ -139,6 +139,19 @@
     @media screen and(min-width: 768px) {
       max-width: 186px;
     }
+    @media screen and(min-width: 1200px) {
+          max-width: 160px;
+        }
+
+        &--header {
+          @media screen and(min-width: 768px) {
+              max-width: 160px;
+            }
+          
+            @media screen and(min-width: 1200px) {
+              max-width: 159px;
+            }
+        }
 
     &--table {
       @media screen and (max-width:767.98px) {
