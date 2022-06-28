@@ -7,10 +7,17 @@ const heroTextBtn = document.querySelector('.hero__text-button');
 const heroIconUp = document.querySelector('.hero__icon-up');
 const heroIconDown = document.querySelector('.hero__icon-down');
 const heroText = document.querySelector('.js-hero__text-inner')
+const buyButton = document.querySelector('.js-buy-button')
+
 
 btnBurgerMenu.addEventListener('click', isOpenMenu);
 
 btnCloseMenu.addEventListener('click', isOpenMenu);
+
+buyButton.addEventListener('click', () => {
+    headerMenu.classList.remove('is-open');
+    backDrop.classList.add('is-hidden');
+});
 
 navLinkMenu.forEach(el =>
     el.addEventListener('click', () => {
