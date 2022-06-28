@@ -4,9 +4,7 @@
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts">
       <li class="contacts__item">
-        <div class="category">
           <p class="category__name">Cafe</p>
-        </div>
         <ul class="location">
           <li class="location__item">
             <p class="location__name">Chicago</p>
@@ -45,9 +43,7 @@
         </ul>
       </li>
       <li class="contacts__item">
-        <div class="category category--green">
-          <p class="category__name">Foodtruck</p>
-        </div>
+          <p class="category__name category__name--green">Foodtruck</p>
         <ul class="location">
           <li class="location__item">
             <p class="location__name">Los Angeles</p>
@@ -86,9 +82,7 @@
         </ul>
       </li>
       <li class="contacts__item">
-        <div class="category">
           <p class="category__name">Cafe</p>
-        </div>
         <ul class="location">
           <li class="location__item">
             <p class="location__name">New York</p>
@@ -127,15 +121,15 @@
         </ul>
       </li>
     </ul>
-    <div class="contacts-btns">
-    <button class="locations-btn contact-btn" type="button" location-modal-open>
+    <ul class="contacts-btns">
+    <li class="contacts-btns__item"><button class="locations-btn contact-btn" type="button" location-modal-open>
       <span class="location-btn__name">Our Locations</span> >
-    </button>
+    </button></li>
 
-    <button class="franchise-btn contact-btn" type="button" contacts-modal-open>
+    <li class="contacts-btns__item"><button class="franchise-btn contact-btn" type="button" contacts-modal-open>
       <span class="franchise-btn__name">Franchise</span> >
-    </button>
-    </div>
+    </button> </li>
+  </ul>
 
     <!-- <div class="locations-backdrop is-hidden" location-modal >
       <div class="locations-modal">
@@ -167,7 +161,7 @@
           </label>
     
           <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="+380576547924"/>
+            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="+380000000000"/>
             <span class="franchise-modal-form__label">Phone</span>
           </label>
     
@@ -189,7 +183,7 @@
     
           <label class="franchise-textarea__group">
             <textarea class="franchise-modal-form__message" name="user-message" rows="3" placeholder="Type message"></textarea>
-            <span class="franchise-modal-form__label">Your message</span>
+            <span class="franchise-modal-form__label franchise-modal-form__label--textarea">Your message</span>
           </label>
     
           <label class="franchise-modal-form__policy-group">
