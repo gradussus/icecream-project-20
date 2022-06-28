@@ -295,6 +295,7 @@
         display: none;
     }
     @media screen and (min-width: 768px) {
+        display: none;
         position: absolute;
         opacity: 0;
         left: 0;
@@ -323,6 +324,7 @@
         margin-bottom: 32px;
     }
     @media screen and (min-width: 768px) {
+        display: block;
         width: 100%;
         opacity: 1;  
         transform: translateY(-92%);
