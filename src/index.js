@@ -12,6 +12,7 @@ const buyButton = document.querySelector('.js-buy-button')
 
 btnBurgerMenu.addEventListener('click', isOpenMenu);
 
+
 btnCloseMenu.addEventListener('click', isOpenMenu);
 
 buyButton.addEventListener('click', () => {
@@ -38,3 +39,4 @@ heroTextBtn.addEventListener('click', () => {
 }
 
 );
+
