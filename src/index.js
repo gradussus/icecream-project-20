@@ -12,6 +12,7 @@ const buyButton = document.querySelector('.js-buy-button')
 
 btnBurgerMenu.addEventListener('click', isOpenMenu);
 
+
 btnCloseMenu.addEventListener('click', isOpenMenu);
 
 buyButton.addEventListener('click', () => {
@@ -20,9 +21,12 @@ buyButton.addEventListener('click', () => {
 });
 
 navLinkMenu.forEach(el =>
-    el.addEventListener('click', () => {
+    el.addEventListener('click', (e) => {
         headerMenu.classList.toggle('is-open');
         backDrop.classList.add('is-hidden');
+
+       
+     
     }));
 
 
@@ -38,3 +42,4 @@ heroTextBtn.addEventListener('click', () => {
 }
 
 );
+
