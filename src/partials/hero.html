@@ -5,17 +5,20 @@
         <div class="hero__image">
           <picture>
             <source srcset="
-                ./images/header-hero/hero-icecream@1x.png 1x,
-                ./images/header-hero/hero-icecream@2x.png 2x
-              " media="(max-width:767px)" />
-
+                ./images/header-hero/hero-icecream-desktop@1x.png 1x,
+                ./images/header-hero/hero-icecream-desktop@2x.png 2x" media="(min-width:1200px)" />
             <source srcset="
                 ./images/header-hero/hero-icecream-table@1x.png 1x,
                 ./images/header-hero/hero-icecream-table@2x.png 2x
-              " media="(min-width:768px) and (max-width: 1199px)" />
+                " media="(min-width:768px)" />
+                            
             <source srcset="
-                ./images/header-hero/hero-icecream-desktop@1x.png 1x,
-                ./images/header-hero/hero-icecream-desktop@2x.png 2x" media="(min-width:1200px)" />
+                ./images/header-hero/hero-icecream@1x.png 1x,
+                ./images/header-hero/hero-icecream@2x.png 2x
+              " />
+
+           
+            
             <img src="./images/header-hero/hero-icecream@1x.png" alt="Icecream" />
           </picture>
         </div>
@@ -35,13 +38,13 @@
       </div>
       <div class="hero__milk">
         <picture>
-          <source srcset="
-              ./images/header-hero/hero-milk-table@1x.png 1x,
-              ./images/header-hero/hero-milk-table@2x.png 2x" media="(max-width:1199px)" />
+         
           <source srcset="
               ./images/header-hero/hero-milk-desktop@1x.png 1x,
               ./images/header-hero/hero-milk-desktop@2x.png 2x" media="(min-width:1200px)" />
-
+<source srcset="
+              ./images/header-hero/hero-milk-table@1x.png 1x,
+              ./images/header-hero/hero-milk-table@2x.png 2x" />
           <img src="./images/header-hero/hero-milk-table@1x.png" alt="Milk" />
         </picture>
       </div>
@@ -70,13 +73,14 @@
       <div class="hero__girl">
         <picture>
           <source srcset="
+            ./images/header-hero/hero-girl-desktop@1x.png 1x,
+            ./images/header-hero/hero-girl-desktop@2x.png 2x
+              " media="(min-width:1200px)" />
+          <source srcset="
               ./images/header-hero/hero-girl-table@1x.png 1x,
               ./images/header-hero/hero-girl-table@2x.png 2x
-            " media="(min-width:768px) and (max-width: 1199px)" />
-          <source srcset="
-                        ./images/header-hero/hero-girl-desktop@1x.png 1x,
-                        ./images/header-hero/hero-girl-desktop@2x.png 2x
-                      " media="(min-width:1200px)" />
+            " media="(min-width:768px)" />
+         
           <img src="./images/header-hero/hero-girl-table@1x.png" alt="Girl with icecream" />
         </picture>
       </div>
