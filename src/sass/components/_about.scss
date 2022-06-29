@@ -226,6 +226,7 @@ body.form-open {
 /* Модальне вікно About*/
 .modal {
     position: relative;
+    z-index: 10;
     max-width: 450px;
     height: 100%;
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
