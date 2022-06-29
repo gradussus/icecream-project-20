@@ -21,9 +21,11 @@ buyButton.addEventListener('click', () => {
 });
 
 navLinkMenu.forEach(el =>
-    el.addEventListener('click', () => {
+    el.addEventListener('click', (e) => {
         headerMenu.classList.toggle('is-open');
         backDrop.classList.add('is-hidden');
+
+     
     }));
 
 
