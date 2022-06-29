@@ -25,6 +25,7 @@
 }
 
 .customer-card__item:nth-child(1){
+    
     margin-bottom: 30px;
     @media screen and (min-width:768px){
         margin-bottom: 20px;
@@ -32,8 +33,11 @@
 }
 
 .customer-card__foto{
+    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    width: 85px;
+    height: 85px;
 }
 .customer-card__item:nth-child(2){
     background-color: $review-card-bg-color;
@@ -50,8 +54,8 @@
 
     box-shadow: 10px 10px 8px -8px rgba(0, 0, 0, 0.3);
 
-    @media screen and (min-width: 320px){
-        width: 280px;
+    @media screen and (min-width: 480px){
+        width: 440px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -77,6 +81,8 @@
     font-size: 12px;
     line-height: 2.58;
     text-align: center;
+
+    font-family: $review-font;
 
     color: $default-text-color;
 
@@ -142,6 +148,7 @@
     font-size: 14px;
     line-height: 1.86;
     text-align: center;
+    font-family: $review-font;
 
     color: $default-text-color;
     
@@ -166,11 +173,18 @@
 
 .swiper-pagination{
     position: static; 
+    margin-left: auto;
+    margin-right: auto;
+ 
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
     margin: 0 9px;
 }
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    transform: translateX(0%);
+    }    
+
 .swiper-pagination-bullet{
     width: 12px;
     height: 12px;

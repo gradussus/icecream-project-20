@@ -16,17 +16,15 @@ var swiper = new Swiper('.mySwiper', {
       onlyInViewport: false,
       pageUpDown: true,
     },
-    mousewheel: {
-      invert: true,
-    },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
+      dynamicBullets: true,
     },
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 3500,
+      delay: 2000,
     },
   });
