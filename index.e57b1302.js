@@ -1,2 +1,0 @@
-window.onscroll=function(){return o=document.getElementById("header"),n=o.offsetTop,void(window.pageYOffset>n?o.classList.add("js-no-transparency"):o.classList.remove("js-no-transparency"));var o,n},mybutton=document.querySelector(".scroll-btn"),window.onscroll=function(){document.body.scrollTop>30||document.documentElement.scrollTop>30?mybutton.style.display="flex":mybutton.style.display="none"};
-//# sourceMappingURL=index.e57b1302.js.map
