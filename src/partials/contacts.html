@@ -126,7 +126,7 @@
         <button
           class="locations-btn contact-btn"
           type="button"
-          location-modal-open
+          data-location-modal-open
         >
           <span class="location-btn__name">Our Locations</span> >
         </button>
@@ -136,16 +136,16 @@
         <button
           class="franchise-btn contact-btn"
           type="button"
-          contacts-modal-open
+          data-contacts-modal-open
         >
           <span class="franchise-btn__name">Franchise</span> >
         </button>
       </li>
     </ul>
 
-    <div class="locations-backdrop is-hidden" location-modal>
+    <div class="locations-backdrop is-hidden" data-location-modal>
       <div class="locations-modal">
-        <button class="locations-modal__btn" location-modal-close>
+        <button class="locations-modal__btn" data-location-modal-close>
           <svg class="locations-modal__btn-icon" width="14px" height="14px">
             <use href="./images/header-hero/sprite.svg#menu-close"></use>
           </svg>
@@ -171,9 +171,9 @@
       </div>
     </div>
 
-    <div class="contacts-backdrop is-hidden" contacts-modal>
+    <div class="contacts-backdrop is-hidden" data-contacts-modal>
       <div class="contacts-modal">
-        <button class="contact-modal__btn" contacts-modal-close>
+        <button class="contact-modal__btn" data-contacts-modal-close>
           <svg class="contact-modal__btn-icon" width="14px" height="14px">
             <use href="./images/header-hero/sprite.svg#menu-close"></use>
           </svg>
@@ -292,6 +292,4 @@
       </div>
     </div>
   </div>
-
 </section>
-
