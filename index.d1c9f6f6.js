@@ -1,0 +1,2 @@
+window.onscroll=()=>function(){const o=document.getElementById("header"),n=o.offsetTop;window.pageYOffset>n?o.classList.add("js-no-transparency"):o.classList.remove("js-no-transparency")}(),mybutton=document.querySelector(".scroll-btn"),window.onscroll=function(){document.body.scrollTop>30||document.documentElement.scrollTop>30?mybutton.style.display="flex":mybutton.style.display="none"};
+//# sourceMappingURL=index.d1c9f6f6.js.map
