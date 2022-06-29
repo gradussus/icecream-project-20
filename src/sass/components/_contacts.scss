@@ -27,6 +27,10 @@
 }
 
 .contacts {
+  @media screen  and (max-width: 767.98px) {
+    margin-bottom: 32px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     display: flex;
     margin: -16px;
@@ -35,20 +39,22 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     margin: -16px;
-    margin-bottom: 44px;
   }
 }
 
 .contacts__item {
-  margin-bottom: 20px;
   padding: 40px 32px;
   
   width: 100%;
   background: $background-white;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
 
   &:hover,
   &:focus {
@@ -345,6 +351,131 @@
 }
 
 // Modal form location
+
+.locations-backdrop {
+  transition: opacity 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  visibility: visible;
+  transition: visibility 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.locations-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 35px 20px;
+
+  max-width: 300px;
+  max-height: calc(100vh - 30px);
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  overflow-y: scroll;
+
+  background-color: $background-lightpink;
+  background-image: linear-gradient(to right,
+      rgba(255, 245, 246, 0.4),
+      rgba(255, 245, 246, 0.4));
+
+  transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1), opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+
+  .backdrop.is-hidden & {
+    transform: scale(0.9);
+  }
+}
+
+.locations-backdrop.is-hidden .locations-modal {
+  transform: translate(-50%, -50%) scale(0.3);
+  opacity: 0;
+}
+
+.locations-backdrop .locations-modal {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.locations-modal__btn {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+  padding: 0;
+  border: none;
+
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.locations-modal__btn-icon {
+  fill: $secondary-title-color;
+  stroke: $secondary-title-color;
+
+  .locations-modal__btn:hover &,
+  .locations-modal__btn:focus & {
+    fill: $hover-color;
+    stroke: $hover-color;
+  }
+}
+
+.location-modal__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $title-text-color;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.31;
+}
+
+.location-modal__map {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.location-modal__map {
+  max-width: 500px;
+  height: 300px;
+}
 
 // Modal form franchise
 

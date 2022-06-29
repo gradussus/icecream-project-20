@@ -4,7 +4,7 @@
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts">
       <li class="contacts__item">
-          <p class="category__name">Cafe</p>
+        <p class="category__name">Cafe</p>
         <ul class="location">
           <li class="location__item">
             <p class="location__name">Chicago</p>
@@ -43,7 +43,7 @@
         </ul>
       </li>
       <li class="contacts__item">
-          <p class="category__name category__name--green">Foodtruck</p>
+        <p class="category__name category__name--green">Foodtruck</p>
         <ul class="location">
           <li class="location__item">
             <p class="location__name">Los Angeles</p>
@@ -82,7 +82,7 @@
         </ul>
       </li>
       <li class="contacts__item">
-          <p class="category__name">Cafe</p>
+        <p class="category__name">Cafe</p>
         <ul class="location">
           <li class="location__item">
             <p class="location__name">New York</p>
@@ -122,24 +122,55 @@
       </li>
     </ul>
     <ul class="contacts-btns">
-    <li class="contacts-btns__item"><button class="locations-btn contact-btn" type="button" location-modal-open>
-      <span class="location-btn__name">Our Locations</span> >
-    </button></li>
+      <li class="contacts-btns__item">
+        <button
+          class="locations-btn contact-btn"
+          type="button"
+          location-modal-open
+        >
+          <span class="location-btn__name">Our Locations</span> >
+        </button>
+      </li>
 
-    <li class="contacts-btns__item"><button class="franchise-btn contact-btn" type="button" contacts-modal-open>
-      <span class="franchise-btn__name">Franchise</span> >
-    </button> </li>
-  </ul>
+      <li class="contacts-btns__item">
+        <button
+          class="franchise-btn contact-btn"
+          type="button"
+          contacts-modal-open
+        >
+          <span class="franchise-btn__name">Franchise</span> >
+        </button>
+      </li>
+    </ul>
 
-    <!-- <div class="locations-backdrop is-hidden" location-modal >
+    <div class="locations-backdrop is-hidden" location-modal>
       <div class="locations-modal">
         <button class="locations-modal__btn" location-modal-close>
           <svg class="locations-modal__btn-icon" width="14px" height="14px">
             <use href="./image/sprite.svg#menu-close"></use>
           </svg>
         </button>
-    </div> -->
-    
+        <p class="location-modal__title">
+          You can enjoy tasty desserts in our cafes
+        </p>
+        <a
+          href="https://www.google.com/maps/d/edit?mid=1b1C4M6Jyn1kDPqlPzuGsDo0bMq4hQCo&usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <iframe
+            class="location-modal__map"
+            src="https://www.google.com/maps/d/embed?mid=1b1C4M6Jyn1kDPqlPzuGsDo0bMq4hQCo&ehbc=2E312F"
+            frameborder="0"
+            aria-hidden="false"
+            tabindex="0"
+            loading="lazy"
+            allowfullscreen
+          ></iframe
+        ></a>
+      </div>
+    </div>
+
     <div class="contacts-backdrop is-hidden" contacts-modal>
       <div class="contacts-modal">
         <button class="contact-modal__btn" contacts-modal-close>
@@ -147,64 +178,120 @@
             <use href="./image/sprite.svg#menu-close"></use>
           </svg>
         </button>
-        <b class="franchise-form-title">Become our partner, let's work together</b>
+        <b class="franchise-form-title"
+          >Become our partner, let's work together</b
+        >
         <form class="franchise-modal-form">
-         <div class="franchise-modal-form-data">
-          <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Jack"/>
-            <span class="franchise-modal-form__label">Name</span>
-          </label>
-    
-          <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Sparrow"/>
-            <span class="franchise-modal-form__label">Surname</span>
-          </label>
-    
-          <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="+380000000000"/>
-            <span class="franchise-modal-form__label">Phone</span>
-          </label>
-    
-          <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="info@gmail.com"/>
-            <span class="franchise-modal-form__label">Mail</span>
-          </label>
-    
-          <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Kyiv"/>
-            <span class="franchise-modal-form__label">City to open an establishment</span>
-          </label>
-    
-          <label class="franchise-modal-form__group">
-            <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Cafe/Foodtruck"/>
-          <span class="franchise-modal-form__label">Type of category</span>
-          </label>
+          <div class="franchise-modal-form-data">
+            <label class="franchise-modal-form__group">
+              <input
+                class="franchise-modal-form__input"
+                type="text"
+                name="user-name"
+                placeholder="Jack"
+              />
+              <span class="franchise-modal-form__label">Name</span>
+            </label>
+
+            <label class="franchise-modal-form__group">
+              <input
+                class="franchise-modal-form__input"
+                type="text"
+                name="user-name"
+                placeholder="Sparrow"
+              />
+              <span class="franchise-modal-form__label">Surname</span>
+            </label>
+
+            <label class="franchise-modal-form__group">
+              <input
+                class="franchise-modal-form__input"
+                type="text"
+                name="user-name"
+                placeholder="+380000000000"
+              />
+              <span class="franchise-modal-form__label">Phone</span>
+            </label>
+
+            <label class="franchise-modal-form__group">
+              <input
+                class="franchise-modal-form__input"
+                type="text"
+                name="user-name"
+                placeholder="info@gmail.com"
+              />
+              <span class="franchise-modal-form__label">Mail</span>
+            </label>
+
+            <label class="franchise-modal-form__group">
+              <input
+                class="franchise-modal-form__input"
+                type="text"
+                name="user-name"
+                placeholder="Kyiv"
+              />
+              <span class="franchise-modal-form__label"
+                >City to open an establishment</span
+              >
+            </label>
+
+            <label class="franchise-modal-form__group">
+              <input
+                class="franchise-modal-form__input"
+                type="text"
+                name="user-name"
+                placeholder="Cafe/Foodtruck"
+              />
+              <span class="franchise-modal-form__label">Type of category</span>
+            </label>
           </div>
-    
+
           <label class="franchise-textarea__group">
-            <textarea class="franchise-modal-form__message" name="user-message" rows="3" placeholder="Type message"></textarea>
-            <span class="franchise-modal-form__label franchise-modal-form__label--textarea">Your message</span>
+            <textarea
+              class="franchise-modal-form__message"
+              name="user-message"
+              rows="3"
+              placeholder="Type message"
+            ></textarea>
+            <span
+              class="franchise-modal-form__label franchise-modal-form__label--textarea"
+              >Your message</span
+            >
           </label>
-    
+
           <label class="franchise-modal-form__policy-group">
-            <input class="franchise-modal-form__checkbox visually-hidden" type="checkbox" />
+            <input
+              class="franchise-modal-form__checkbox visually-hidden"
+              type="checkbox"
+            />
             <span class="franchise-modal-form__custom-checkbox">
-              <svg class="franchise-modal-form__custom-checkbox-icon" width="8" height="8" viewBox="0 0 32 32">
+              <svg
+                class="franchise-modal-form__custom-checkbox-icon"
+                width="8"
+                height="8"
+                viewBox="0 0 32 32"
+              >
                 <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
               </svg>
             </span>
             <span class="franchise-modal-form__policy-desc">
               I agree with the newsletter and accept
-              <a class="franchise-modal-form__policy-link" href="#">Terms of an agreement</a>
+              <a class="franchise-modal-form__policy-link" href="#"
+                >Terms of an agreement</a
+              >
             </span>
           </label>
-    
-          <button class="franchise-modal-form__submit-btn contact-btn" type="submit">
+
+          <button
+            class="franchise-modal-form__submit-btn contact-btn"
+            type="submit"
+          >
             Send a request
           </button>
         </form>
       </div>
     </div>
   </div>
+
 </section>
 
