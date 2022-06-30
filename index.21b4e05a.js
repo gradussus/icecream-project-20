@@ -1,2 +1,0 @@
-const e=new IntersectionObserver(((e,t)=>{e.forEach((e=>{e.target.classList.toggle("is-inViewport",e.isIntersecting)}));let r=document.querySelectorAll(".counter");r.forEach((e=>{let t=0,r=parseInt(e.getAttribute("data-value")),n=Math.floor(3500/r),o=setInterval((function(){t+=1,e.textContent=t,t==r&&clearInterval(o)}),n)}))})),t={};document.querySelectorAll("[data-inviewport]").forEach((r=>{e.observe(r,t)}));
-//# sourceMappingURL=index.21b4e05a.js.map
