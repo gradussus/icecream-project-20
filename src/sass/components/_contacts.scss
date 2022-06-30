@@ -470,14 +470,15 @@
 
 .location-modal__map {
   display: block;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.location-modal__map {
-  max-width: 500px;
+  width: 95%;
   height: 300px;
+  margin: 0 auto;
+
+  border: none;
+
+  @media screen and (min-width:768px){
+    max-width: 500px;
+  }
 }
 
 // Modal form franchise
