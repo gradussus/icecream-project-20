@@ -255,6 +255,8 @@
 
 .contact-btn {
   display: block;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   min-width: 161px;
   min-height: 44px;
@@ -285,6 +287,8 @@
 }
 
 .locations-btn {
+  display: flex;
+  align-items: center;
   background: #d41342;
 
   text-align: center;
@@ -313,6 +317,8 @@
 }
 
 .franchise-btn {
+  display: flex;
+  align-items: center;
   background: $background-white;
 
   color: $accent-color;
@@ -343,11 +349,11 @@
 }
 
 .location-btn__icon {
-  fill: #d41342;
+  fill: $primary-text-color;
 }
 
 .franchise-btn__icon {
-  fill: $primary-text-color;
+  fill: #d41342;
 }
 
 // Modal form location
@@ -405,9 +411,6 @@
     max-width: 500px;
   }
 
-  .backdrop.is-hidden & {
-    transform: scale(0.9);
-  }
 }
 
 .locations-backdrop.is-hidden .locations-modal {
@@ -533,10 +536,6 @@
 
   @media screen and (min-width: 768px) {
     max-width: 550px;
-  }
-
-  .backdrop.is-hidden & {
-    transform: scale(0.9);
   }
 }
 
