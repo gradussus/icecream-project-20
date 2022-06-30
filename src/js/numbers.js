@@ -5,7 +5,7 @@ const inViewport = (entries, observer) => {
 
   
   let valueDisplays = document.querySelectorAll('.counter');
-  let interval = 3500;
+  let interval = 700;
   
   valueDisplays.forEach((valueDisplay) => {
     let startValue = 0;
