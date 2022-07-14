@@ -1,2 +1,0 @@
-!function(){window.onscroll=function(){return o=document.getElementById("header"),n=o.offsetTop,void(window.pageYOffset>n?o.classList.add("js-no-transparency"):o.classList.remove("js-no-transparency"));var o,n};var o=document.querySelector(".scroll-btn");window.onscroll=function(){document.body.scrollTop>30||document.documentElement.scrollTop>30?o.style.display="flex":o.style.display="none"}}();
-//# sourceMappingURL=index.a048e10d.js.map
